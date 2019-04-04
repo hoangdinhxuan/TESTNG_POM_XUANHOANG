@@ -13,4 +13,11 @@ public class NewCustomerUI {
 	public static final String STATE_MSG = "//label[@id='message5']";
 	public static final String PIN_TXT = "//input[@name='pinno']";
 	public static final String PIN_MSG = "//label[@id='message6']";
+	public static final String MOBLIE_NUMBER_TXT = "//input[@name='telephoneno']";
+	public static final String MOBLIE_NUMBER_MSG = "//label[@id='message7']";
+	public static final String EMAIL_TXT = "//input[@name='emailid']";
+	public static final String EMAIL_MSG = "//label[@id='message9']";
+	public static final String PASSWORD_TXT = "//input[@name='password']";
+	public static final String PASSWORD_MSG = "//label[@id='message18']";
+	public static final String SUMMIT_BTN = "//input[@value='Submit']";
 }

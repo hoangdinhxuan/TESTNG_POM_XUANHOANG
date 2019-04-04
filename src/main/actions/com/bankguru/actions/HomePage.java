@@ -25,4 +25,11 @@ public class HomePage extends commonFunction {
 		return PageFactory.initElements(driver, NewCustormer.class);
 
 	}
+
+	public EditCustomer clickMenuEditCustomer() {
+		waitVisible(HomePageUI.EDITCUSTOMER_LINK);
+		click(HomePageUI.EDITCUSTOMER_LINK);
+		return PageFactory.initElements(driver, EditCustomer.class);
+
+	}
 }
