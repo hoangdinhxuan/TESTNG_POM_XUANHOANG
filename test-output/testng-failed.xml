@@ -9,27 +9,28 @@
     <parameter name="version" value="2.46"/>
     <parameter name="url" value="http://demo.guru99.com/v4"/>
     <classes>
+      <class name="com.bankguru.testcase.EditCustomerScript">
+        <methods>
+          <include name="TC_10"/>
+          <include name="afterClass"/>
+          <include name="TC_20"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="TC_18"/>
+          <include name="TC_11"/>
+          <include name="TC_05"/>
+          <include name="TC_16"/>
+          <include name="TC_14"/>
+          <include name="TC_12"/>
+          <include name="TC_08"/>
+          <include name="TC_09"/>
+        </methods>
+      </class> <!-- com.bankguru.testcase.EditCustomerScript -->
       <class name="com.bankguru.testcase.NewCustomerScript">
         <methods>
-          <include name="TC_17"/>
-          <include name="TC_19"/>
-          <include name="TC_24"/>
-          <include name="TC_18"/>
-          <include name="TC_29"/>
-          <include name="TC_26"/>
-          <include name="TC_20"/>
-          <include name="TC_25"/>
-          <include name="TC_22"/>
+          <include name="TC_30"/>
           <include name="beforeMethod"/>
-          <include name="TC_21"/>
-          <include name="TC_16_1"/>
           <include name="beforeClass"/>
-          <include name="TC_27_1"/>
-          <include name="TC_16_2"/>
-          <include name="TC_27_3"/>
-          <include name="TC_27_2"/>
-          <include name="TC_27_5"/>
-          <include name="TC_27_4"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.bankguru.testcase.NewCustomerScript -->

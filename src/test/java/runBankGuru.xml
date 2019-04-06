@@ -7,7 +7,7 @@
 		<classes>
 			<!-- <class name="com.bankguru.testcase.LogInScript" /> -->
 			<class name="com.bankguru.testcase.NewCustomerScript" />
-<!-- 			<class name="com.bankguru.testcase.EditCustomerScript" /> -->
+			<class name="com.bankguru.testcase.EditCustomerScript" />
 		</classes>
 	</test>
 	<!-- <test name="Login guru on Firefox"> -->

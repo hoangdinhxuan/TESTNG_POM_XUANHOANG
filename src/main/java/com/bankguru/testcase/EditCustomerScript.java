@@ -24,7 +24,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	HomePage homePage;
 	NewCustomer newCustomer;
 	EditCustomer editCustomer;
-	String email, emailLogin, passwordLogin;
+	String email;
+	static String customerId;
 
 	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
@@ -34,14 +35,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		email = "hoangxuan" + randomEmail() + "@gmail.com";
 		// loginPage = new LoginPage(driver);
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
-		registerPage = loginPage.clickHereLink();
-		registerPage.inputEmailRegister(email);
-		registerPage.clickSumit();
-		emailLogin = registerPage.getUsername();
-		passwordLogin = registerPage.getPasswork();
-		loginPage = registerPage.navigateToLoginPage("http://demo.guru99.com/V4/");
-		loginPage.iputUsename(emailLogin);
-		loginPage.iputPassword(passwordLogin);
+		loginPage.iputUsename(NewCustomerScript.emailLogin);
+		loginPage.iputPassword(NewCustomerScript.passwordLogin);
 		homePage = loginPage.clickLogin();
 		verifyEqual(homePage.getWelcomString(), "Welcome To Manager's Page of Guru99 Bank");
 	}
@@ -49,13 +44,14 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	@BeforeMethod
 	public void beforeMethod() {
 		editCustomer = homePage.clickMenuEditCustomer();
+
 	}
 
 	@Test
 	// 1.Verify Customer idCustomer id cannot b empty1) Do not enter a value in
 	// Customer id Field2) Press TAB and move to next FieldAn error message
 	// "CustomerID is required" must be shown
-	
+
 	public void TC_01() {
 		editCustomer.pressKeyTabCustomerId(Keys.TAB);
 		verifyEqual(editCustomer.getTexCustomerId(), "Customer ID is required");
@@ -86,15 +82,217 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		editCustomer.inputCustomerId("xyz");
 		verifyEqual(editCustomer.getTexCustomerId(), "Characters are not allowed");
 	}
+
 //	5 Valid Customer Id
 //	1) Enter valid Customer id
-//	2) Submit 12345 Edit Customer successfully
+//	2) Submit Edit Customer successfully
+
 	@Test
 	public void TC_05() {
-		editCustomer.inputCustomerId("12345");
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 	}
-	
+//	}
+//	8.Verify Address Field Address cannot be empty
+//	1) Do not enter a value in ADDRESS Field 2) Press clear to  Field
+//	An error message "Address Field must not be blank" must be shown
+
+	@Test
+	public void TC_08() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearAddress();
+		verifyEqual(editCustomer.getTexAddress(), "Address Field must not be blank");
+
+	}
+
+	// 9.Verify Address Field Address cannot be empty
+//	1) Do not enter a value in ADDRESS Field 2) Press clear to  Field
+//	An error message "Address Field must not be blank" must be shown , presskeyTab Address An error message "Email-ID must not be blank"
+	@Test
+	public void TC_09() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearAddress();
+		verifyEqual(editCustomer.getTexAddress(), "Address Field must not be blank");
+		editCustomer.pressKeyTabAddress(Keys.TAB);
+		verifyEqual(editCustomer.getTexAddress(), "Address Field must not be blank");
+	}
+
+	//
+//	10.	inputaddress @#^%#^%^
+	@Test
+	public void TC_10() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearAddress();
+		verifyEqual(editCustomer.getTexAddress(), "Address Field must not be blank");
+		editCustomer.inputAddress("@#^%#^%^");
+		verifyEqual(editCustomer.getTexAddress(), "Special characters are not allowed");
+
+	}
+////	11.	 City cannot be empty 1) Do not enter a value in CITY Field 2) Press TAB and move to next Field Do not enter a value in CITY Field 2) Press TAB and SPace and move to next Field
+
+	@Test
+	public void TC_11() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearCity();
+		verifyEqual(editCustomer.getTexCity(), "City Field must not be blank");
+		editCustomer.pressKeyTabCity(Keys.SPACE);
+		verifyEqual(editCustomer.getTexCity(), "First character can not have space");
+		editCustomer.clearCity();
+		verifyEqual(editCustomer.getTexCity(), "City Field must not be blank");
+		editCustomer.pressKeyTabCity(Keys.TAB);
+		verifyEqual(editCustomer.getTexCity(), "City Field must not be blank");
+
+	}
+
+//	 12 Enter numeric value in CITY Field 1234 city123
+	@Test
+	public void TC_12() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearCity();
+		verifyEqual(editCustomer.getTexCity(), "City Field must not be blank");
+		editCustomer.inputNumberCity("1234");
+		verifyEqual(editCustomer.getTexCity(), "Numbers are not allowed");
+		// Enter Special Character In CITY Field : City!@#
+		editCustomer.clearCity();
+		editCustomer.inputNumberCity("City!@#");
+		verifyEqual(editCustomer.getTexCity(), "Special characters are not allowed");
+
+	}
+	// 13.Verify State Field State cannot be empt1) Do not enter a value in STATE
+	// Field 2) Press TAB and move to next Field.An error message "State must not be
+	// blank" must be shown
+
+	public void TC_13() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearState();
+		verifyEqual(editCustomer.getTexState(), "State must not be blank");
+		editCustomer.pressKeyState(Keys.SPACE);
+		verifyEqual(editCustomer.getTexState(), "First character can not have space");
+		editCustomer.clearState();
+		verifyEqual(editCustomer.getTexState(), "State must not be blank");
+		editCustomer.pressKeyState(Keys.TAB);
+		verifyEqual(editCustomer.getTexState(), "State must not be blank");
+
+	}
+
+//14 input valua 1234, State!@#
+	@Test
+	public void TC_14() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearState();
+		verifyEqual(editCustomer.getTexState(), "State must not be blank");
+		editCustomer.inputState("1234");
+		verifyEqual(editCustomer.getTexState(), "Numbers are not allowed");
+		// Enter Special Character In State Field : City!@#
+		editCustomer.clearState();
+		editCustomer.inputState("State!@#");
+		verifyEqual(editCustomer.getTexState(), "Special characters are not allowed");
+
+	}
+
+	// PIN
+	public void TC_15() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearPin();
+		verifyEqual(editCustomer.getTexPin(), "PIN Code must not be blank");
+		editCustomer.pressKeyPin(Keys.SPACE);
+		verifyEqual(editCustomer.getTexPin(), "First character can not have space");
+		editCustomer.clearState();
+		verifyEqual(editCustomer.getTexPin(), "PIN Code must not be blank");
+		editCustomer.pressKeyPin(Keys.TAB);
+		verifyEqual(editCustomer.getTexPin(), "PIN Code must not be blank");
+
+	}
+
+//16 input valua 1234, Pin!@#
+	@Test
+	public void TC_16() {
+		editCustomer.inputCustomerId(NewCustomerScript.customerId);
+		editCustomer.clickSummit();
+		editCustomer.clearPin();
+		verifyEqual(editCustomer.getTexPin(), "PIN Code must not be blank");
+		editCustomer.inputNumberPin("1234");
+		verifyEqual(editCustomer.getTexPin(), "PIN Code must have 6 Digits");
+		// Enter Special Character In State Field : Pin!@#
+		editCustomer.clearPin();
+		editCustomer.inputNumberPin("Pin!@#");
+		verifyEqual(editCustomer.getTexPin(), "Special characters are not allowed");
+
+	}
+	// MOBIle
+		public void TC_17() {
+			editCustomer.inputCustomerId(NewCustomerScript.customerId);
+			editCustomer.clickSummit();
+			editCustomer.clearMobileNumber();
+			verifyEqual(editCustomer.getTexMobileNumber(), "Mobile no must not be blank");
+			editCustomer.pressKeyMobileNumber(Keys.SPACE);
+			verifyEqual(editCustomer.getTexMobileNumber(), "First character can not have space");
+			editCustomer.clearMobileNumber();
+			verifyEqual(editCustomer.getTexMobileNumber(), "Mobile no must not be blank");
+			editCustomer.pressKeyTabCity(Keys.TAB);
+			verifyEqual(editCustomer.getTexMobileNumber(), "Mobile no must not be blank");
+
+		}
+
+	//18 input valua 1234, mobile!@#
+		@Test
+		public void TC_18() {
+			editCustomer.inputCustomerId(NewCustomerScript.customerId);
+			editCustomer.clickSummit();
+			editCustomer.clearMobileNumber();
+			verifyEqual(editCustomer.getTexMobileNumber(), "Mobile no must not be blank");
+			editCustomer.inputNumberMobileNumber("1234");
+			// Enter Special Character In State Field : "hfhhh"
+			editCustomer.clearMobileNumber();
+			editCustomer.inputNumberMobileNumber("hfhhh");
+			verifyEqual(editCustomer.getTexMobileNumber(), "Characters are not allowed");
+			// Enter Special Character In State Field : "mobile!@#"
+			editCustomer.clearMobileNumber();
+			editCustomer.inputNumberMobileNumber("mobile!@#");
+			verifyEqual(editCustomer.getTexMobileNumber(), "Special characters are not allowed");
+		}
+
+		// 19 EMAil
+				public void TC_19() {
+					editCustomer.inputCustomerId(NewCustomerScript.customerId);
+					editCustomer.clickSummit();
+					editCustomer.clearEmail();
+					verifyEqual(editCustomer.getTexEmail(), "Email-ID must not be blank");
+					editCustomer.pressKeyEmail(Keys.SPACE);
+					verifyEqual(editCustomer.getTexEmail(), "First character can not have space");
+					editCustomer.clearEmail();
+					verifyEqual(editCustomer.getTexEmail(), "Email-ID must not be blank");
+					editCustomer.pressKeyEmail(Keys.TAB);
+					verifyEqual(editCustomer.getTexEmail(), "Email-ID must not be blank");
+
+				}
+
+			//20 input valua 1234, mobile!@#
+				@Test
+				public void TC_20() {
+					editCustomer.inputCustomerId(NewCustomerScript.customerId);
+					editCustomer.clickSummit();
+					editCustomer.clearEmail();
+					verifyEqual(editCustomer.getTexEmail(), "Email-ID must not be blank");
+					editCustomer.inputEmail("1234");
+					verifyEqual(editCustomer.getTexEmail(), "Email-ID is not valid");
+					editCustomer.clearEmail();
+					editCustomer.inputEmail("hfhhh@gmail.");
+					verifyEqual(editCustomer.getTexEmail(), "Email-ID is not valid");
+					// Enter Special Character In State Field : "mobile!@#"
+					editCustomer.clearEmail();
+					editCustomer.inputEmail("email!@#");
+					verifyEqual(editCustomer.getTexEmail(), "Email-ID is not valid");
+				}
+
 	@AfterClass
 	public void afterClass() {
 		closeBrowser();

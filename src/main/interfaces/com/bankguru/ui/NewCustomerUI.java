@@ -20,4 +20,7 @@ public class NewCustomerUI {
 	public static final String PASSWORD_TXT = "//input[@name='password']";
 	public static final String PASSWORD_MSG = "//label[@id='message18']";
 	public static final String SUMMIT_BTN = "//input[@value='Submit']";
+	public static final String CUSTOMER_REGISTED_SUCCESSFUL = "//p[@class='heading3']";
+	public static final String CUSTOMER_ID = "//td[contains(text(),'Customer ID')]/following-sibling::td";
+
 }

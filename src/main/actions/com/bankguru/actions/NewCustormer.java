@@ -134,4 +134,13 @@ public class NewCustormer extends commonFunction {
 		click(NewCustomerUI.SUMMIT_BTN);
 		return PageFactory.initElements(driver, NewCustormer.class);
 	}
+	public String getTexCustomerRegisteredSuccessfully() {
+		waitVisible(NewCustomerUI.CUSTOMER_REGISTED_SUCCESSFUL);
+		return getText(NewCustomerUI.CUSTOMER_REGISTED_SUCCESSFUL);
+	}
+	public String getTexCustomerId() {
+		waitVisible(NewCustomerUI.CUSTOMER_ID);
+		return getText(NewCustomerUI.CUSTOMER_ID);
+	}
+
 }
