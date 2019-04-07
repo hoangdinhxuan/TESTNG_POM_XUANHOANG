@@ -5,7 +5,7 @@
 		<parameter name="version" value="2.46" />
 		<parameter name="url" value="http://demo.guru99.com/v4" />
 		<classes>
-			<!-- <class name="com.bankguru.testcase.LogInScript" /> -->
+			<class name="com.bankguru.testcase.RegisterScript" />
 			<class name="com.bankguru.testcase.NewCustomerScript" />
 			<class name="com.bankguru.testcase.EditCustomerScript" />
 		</classes>

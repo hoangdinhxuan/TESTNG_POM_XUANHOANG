@@ -291,4 +291,29 @@ public class commonFunction extends BasicPage {
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
 
+	public void waitVisibleDynamicElement(String locator, String... dynamic) {
+		String dynamicLocator = String.format(locator, (Object[]) dynamic);
+		WebDriverWait wait = new WebDriverWait(driver, timeouts);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(dynamicLocator)));
+	}
+
+	public void inputDynamicElement(String locator, String value, String... dynamic) {
+		String dynamicLocator = String.format(locator, (Object[]) dynamic);
+		WebElement element = driver.findElement(By.xpath(dynamicLocator));
+		element.sendKeys(value);
+	}
+
+	public void clickDynamicElement(String locator, String... dynamic) {
+		String dynamicLocator = String.format(locator, (Object[]) dynamic);
+		WebElement element = driver.findElement(By.xpath(dynamicLocator));
+		element.click();
+	}
+
+	public String getTextDynamicElement(String locator, String... dynamic) {
+		String dynamicLocator = String.format(locator, (Object[]) dynamic);
+		WebElement element = driver.findElement(By.xpath(dynamicLocator));
+		return element.getText();
+
+	}
+
 }
