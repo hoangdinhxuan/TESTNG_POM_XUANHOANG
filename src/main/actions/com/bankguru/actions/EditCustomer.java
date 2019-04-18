@@ -14,7 +14,10 @@ public class EditCustomer extends commonFunction {
 	public EditCustomer(WebDriver driver) {
 		super(driver);
 	}
-
+	public String getDynamicText(String value) {
+		waitVisibleDynamicElement(NewCustomerUI.DYNAMIC_MSG, value);
+		return getTextDynamicElement(NewCustomerUI.DYNAMIC_MSG, value);
+	}
 	public void pressKeyTabCustomerId(Keys key) {
 		waitVisible(EditCustomerUI.CUSTOMER_ID_TXT);
 		inputKeys(EditCustomerUI.CUSTOMER_ID_TXT, key);

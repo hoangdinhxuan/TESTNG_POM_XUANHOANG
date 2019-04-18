@@ -6,243 +6,327 @@ import com.google.gson.annotations.SerializedName;
 
 public class EditCustomer {
 
-    @SerializedName("customerName")
-    @Expose
-    private String customerName;
-    @SerializedName("dateOfBirth")
-    @Expose
-    private String dateOfBirth;
-    @SerializedName("address")
-    @Expose
-    private String address;
-    @SerializedName("city")
-    @Expose
-    private String city;
-    @SerializedName("state")
-    @Expose
-    private String state;
-    @SerializedName("PIN")
-    @Expose
-    private String pIN;
-    @SerializedName("mobileNumber")
-    @Expose
-    private String mobileNumber;
-    @SerializedName("passwordCustomer")
-    @Expose
-    private String passwordCustomer;
-    @SerializedName("registerSuccessfullyMsg")
-    @Expose
-    private String registerSuccessfullyMsg;
-    @SerializedName("requireIdMsg")
-    @Expose
-    private String requireIdMsg;
-    @SerializedName("nummericValueIdCustomer")
-    @Expose
-    private String nummericValueIdCustomer;
-    @SerializedName("specialCharacterCustomerId")
-    @Expose
-    private String specialCharacterCustomerId;
-    @SerializedName("nummericCityField")
-    @Expose
-    private String nummericCityField;
-    @SerializedName("specialCharacterCityUpdate")
-    @Expose
-    private String specialCharacterCityUpdate;
-    @SerializedName("nummericStateField")
-    @Expose
-    private String nummericStateField;
-    @SerializedName("specialCharacterStateUpdate")
-    @Expose
-    private String specialCharacterStateUpdate;
-    @SerializedName("pinNumberic")
-    @Expose
-    private String pinNumberic;
-    @SerializedName("digitUpdate")
-    @Expose
-    private String digitUpdate;
-    @SerializedName("specialCharacterPinUpdate")
-    @Expose
-    private String specialCharacterPinUpdate;
-    @SerializedName("specialCharacterTelephoneUpdate")
-    @Expose
-    private String specialCharacterTelephoneUpdate;
-    @SerializedName("invalidEmail")
-    @Expose
-    private String invalidEmail;
-    @SerializedName("cannotBeNumbericMsg")
-    @Expose
-    private String cannotBeNumbericMsg;
     @SerializedName("cannotSpecialCharacterMsg")
     @Expose
     private String cannotSpecialCharacterMsg;
-    @SerializedName("urlEditCustomer")
+    @SerializedName("firstCharacterBlankSpaceMsg")
     @Expose
-    private String urlEditCustomer;
-    @SerializedName("cannotFirstCharacterBlankSpaceMsg")
-    @Expose
-    private String cannotFirstCharacterBlankSpaceMsg;
+    private String firstCharacterBlankSpaceMsg;
     @SerializedName("mustBeNumbericMsg")
     @Expose
     private String mustBeNumbericMsg;
-    @SerializedName("cityCannotEmptyMsg")
+    @SerializedName("messegercustomerID")
     @Expose
-    private String cityCannotEmptyMsg;
+    private String messegercustomerID;
+    @SerializedName("customerIDmustBeNumbericMsg")
+    @Expose
+    private String customerIDmustBeNumbericMsg;
+    @SerializedName("customerIDspecialCharacter")
+    @Expose
+    private String customerIDspecialCharacter;
+    @SerializedName("customerIDnumberandCharacter")
+    @Expose
+    private String customerIDnumberandCharacter;
+    @SerializedName("customerIDCharacter")
+    @Expose
+    private String customerIDCharacter;
+    @SerializedName("numberName")
+    @Expose
+    private String numberName;
+    @SerializedName("specialCharacterName")
+    @Expose
+    private String specialCharacterName;
+    @SerializedName("customerNamevalid")
+    @Expose
+    private String customerNamevalid;
+    @SerializedName("nameCannotEmptyMsg")
+    @Expose
+    private String nameCannotEmptyMsg;
+    @SerializedName("cannotBeNumbericMsg")
+    @Expose
+    private String cannotBeNumbericMsg;
+    @SerializedName("namemustBeNumbericMsg")
+    @Expose
+    private String namemustBeNumbericMsg;
     @SerializedName("addressCannotEmptyMsg")
     @Expose
     private String addressCannotEmptyMsg;
-    @SerializedName("stateCannotEmptyMsg")
+    @SerializedName("addressvalid")
     @Expose
-    private String stateCannotEmptyMsg;
-    @SerializedName("pinCannotEmptyMsg")
+    private String addressvalid;
+    @SerializedName("addressspecialCharacter")
     @Expose
-    private String pinCannotEmptyMsg;
+    private String addressspecialCharacter;
+    @SerializedName("dateOfBirthvalid")
+    @Expose
+    private String dateOfBirthvalid;
+    @SerializedName("cityvalid")
+    @Expose
+    private String cityvalid;
+    @SerializedName("cityCannotEmptyMsg")
+    @Expose
+    private String cityCannotEmptyMsg;
+    @SerializedName("citynumber")
+    @Expose
+    private String citynumber;
+    @SerializedName("cityspecialCharacter")
+    @Expose
+    private String cityspecialCharacter;
+    @SerializedName("cityNotBeNumbericMsg")
+    @Expose
+    private String cityNotBeNumbericMsg;
     @SerializedName("pinMustHave6DigitsMsg")
     @Expose
     private String pinMustHave6DigitsMsg;
-    @SerializedName("telephoneCannotEmptyMsg")
+    @SerializedName("pinvalid")
     @Expose
-    private String telephoneCannotEmptyMsg;
+    private String pinvalid;
+    @SerializedName("pinnumbernotenough")
+    @Expose
+    private String pinnumbernotenough;
+    @SerializedName("pinCharacter")
+    @Expose
+    private String pinCharacter;
+    @SerializedName("pinCannotEmptyMsg")
+    @Expose
+    private String pinCannotEmptyMsg;
+    @SerializedName("pinspecialCharacter")
+    @Expose
+    private String pinspecialCharacter;
+    @SerializedName("statevalid")
+    @Expose
+    private String statevalid;
+    @SerializedName("stateCannotEmptyMsg")
+    @Expose
+    private String stateCannotEmptyMsg;
+    @SerializedName("statenumber")
+    @Expose
+    private String statenumber;
+    @SerializedName("statespecialCharacter")
+    @Expose
+    private String statespecialCharacter;
+    @SerializedName("stateNotBeNumbericMsg")
+    @Expose
+    private String stateNotBeNumbericMsg;
+    @SerializedName("mobileNumberCannotEmptyMsg")
+    @Expose
+    private String mobileNumberCannotEmptyMsg;
+    @SerializedName("mobileNumbervalid")
+    @Expose
+    private String mobileNumbervalid;
+    @SerializedName("mobileBlankSpace")
+    @Expose
+    private String mobileBlankSpace;
+    @SerializedName("mobileCharacter")
+    @Expose
+    private String mobileCharacter;
+    @SerializedName("mobilespecialCharacter")
+    @Expose
+    private String mobilespecialCharacter;
     @SerializedName("emailCannotEmptyMsg")
     @Expose
     private String emailCannotEmptyMsg;
-    @SerializedName("emailIncorrectFormatMsg")
+    @SerializedName("emailInputWrongMsg")
     @Expose
-    private String emailIncorrectFormatMsg;
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public String getPIN() {
-        return pIN;
-    }
-
-    public String getMobileNumber() {
-        return mobileNumber;
-    }
-
-    public String getPasswordCustomer() {
-        return passwordCustomer;
-    }
-
-    public String getRegisterSuccessfullyMsg() {
-        return registerSuccessfullyMsg;
-    }
-
-    public String getRequireIdMsg() {
-        return requireIdMsg;
-    }
-
-    public String getNummericValueIdCustomer() {
-        return nummericValueIdCustomer;
-    }
-
-    public String getSpecialCharacterCustomerId() {
-        return specialCharacterCustomerId;
-    }
-
-    public String getNummericCityField() {
-        return nummericCityField;
-    }
-
-    public String getSpecialCharacterCityUpdate() {
-        return specialCharacterCityUpdate;
-    }
-
-    public String getNummericStateField() {
-        return nummericStateField;
-    }
-
-    public String getSpecialCharacterStateUpdate() {
-        return specialCharacterStateUpdate;
-    }
-
-    public String getPinNumberic() {
-        return pinNumberic;
-    }
-
-    public String getDigitUpdate() {
-        return digitUpdate;
-    }
-
-    public String getSpecialCharacterPinUpdate() {
-        return specialCharacterPinUpdate;
-    }
-
-    public String getSpecialCharacterTelephoneUpdate() {
-        return specialCharacterTelephoneUpdate;
-    }
-
-    public String getInvalidEmail() {
-        return invalidEmail;
-    }
-
-    public String getCannotBeNumbericMsg() {
-        return cannotBeNumbericMsg;
-    }
+    private String emailInputWrongMsg;
+    @SerializedName("emailNumberic")
+    @Expose
+    private String emailNumberic;
+    @SerializedName("emailnotcom")
+    @Expose
+    private String emailnotcom;
+    @SerializedName("emailspecialCharacter")
+    @Expose
+    private String emailspecialCharacter;
+    @SerializedName("passWordvalid")
+    @Expose
+    private String passWordvalid;
+    @SerializedName("messegerRegisteredSuccessfully")
+    @Expose
+    private String messegerRegisteredSuccessfully;
 
     public String getCannotSpecialCharacterMsg() {
         return cannotSpecialCharacterMsg;
     }
 
-    public String getUrlEditCustomer() {
-        return urlEditCustomer;
-    }
-
-    public String getCannotFirstCharacterBlankSpaceMsg() {
-        return cannotFirstCharacterBlankSpaceMsg;
+    public String getFirstCharacterBlankSpaceMsg() {
+        return firstCharacterBlankSpaceMsg;
     }
 
     public String getMustBeNumbericMsg() {
         return mustBeNumbericMsg;
     }
 
-    public String getCityCannotEmptyMsg() {
-        return cityCannotEmptyMsg;
+    public String getMessegercustomerID() {
+        return messegercustomerID;
+    }
+
+    public String getCustomerIDmustBeNumbericMsg() {
+        return customerIDmustBeNumbericMsg;
+    }
+
+    public String getCustomerIDspecialCharacter() {
+        return customerIDspecialCharacter;
+    }
+
+    public String getCustomerIDnumberandCharacter() {
+        return customerIDnumberandCharacter;
+    }
+
+    public String getCustomerIDCharacter() {
+        return customerIDCharacter;
+    }
+
+    public String getNumberName() {
+        return numberName;
+    }
+
+    public String getSpecialCharacterName() {
+        return specialCharacterName;
+    }
+
+    public String getCustomerNamevalid() {
+        return customerNamevalid;
+    }
+
+    public String getNameCannotEmptyMsg() {
+        return nameCannotEmptyMsg;
+    }
+
+    public String getCannotBeNumbericMsg() {
+        return cannotBeNumbericMsg;
+    }
+
+    public String getNamemustBeNumbericMsg() {
+        return namemustBeNumbericMsg;
     }
 
     public String getAddressCannotEmptyMsg() {
         return addressCannotEmptyMsg;
     }
 
-    public String getStateCannotEmptyMsg() {
-        return stateCannotEmptyMsg;
+    public String getAddressvalid() {
+        return addressvalid;
     }
 
-    public String getPinCannotEmptyMsg() {
-        return pinCannotEmptyMsg;
+    public String getAddressspecialCharacter() {
+        return addressspecialCharacter;
+    }
+
+    public String getDateOfBirthvalid() {
+        return dateOfBirthvalid;
+    }
+
+    public String getCityvalid() {
+        return cityvalid;
+    }
+
+    public String getCityCannotEmptyMsg() {
+        return cityCannotEmptyMsg;
+    }
+
+    public String getCitynumber() {
+        return citynumber;
+    }
+
+    public String getCityspecialCharacter() {
+        return cityspecialCharacter;
+    }
+
+    public String getCityNotBeNumbericMsg() {
+        return cityNotBeNumbericMsg;
     }
 
     public String getPinMustHave6DigitsMsg() {
         return pinMustHave6DigitsMsg;
     }
 
-    public String getTelephoneCannotEmptyMsg() {
-        return telephoneCannotEmptyMsg;
+    public String getPinvalid() {
+        return pinvalid;
+    }
+
+    public String getPinnumbernotenough() {
+        return pinnumbernotenough;
+    }
+
+    public String getPinCharacter() {
+        return pinCharacter;
+    }
+
+    public String getPinCannotEmptyMsg() {
+        return pinCannotEmptyMsg;
+    }
+
+    public String getPinspecialCharacter() {
+        return pinspecialCharacter;
+    }
+
+    public String getStatevalid() {
+        return statevalid;
+    }
+
+    public String getStateCannotEmptyMsg() {
+        return stateCannotEmptyMsg;
+    }
+
+    public String getStatenumber() {
+        return statenumber;
+    }
+
+    public String getStatespecialCharacter() {
+        return statespecialCharacter;
+    }
+
+    public String getStateNotBeNumbericMsg() {
+        return stateNotBeNumbericMsg;
+    }
+
+    public String getMobileNumberCannotEmptyMsg() {
+        return mobileNumberCannotEmptyMsg;
+    }
+
+    public String getMobileNumbervalid() {
+        return mobileNumbervalid;
+    }
+
+    public String getMobileBlankSpace() {
+        return mobileBlankSpace;
+    }
+
+    public String getMobileCharacter() {
+        return mobileCharacter;
+    }
+
+    public String getMobilespecialCharacter() {
+        return mobilespecialCharacter;
     }
 
     public String getEmailCannotEmptyMsg() {
         return emailCannotEmptyMsg;
     }
 
-    public String getEmailIncorrectFormatMsg() {
-        return emailIncorrectFormatMsg;
+    public String getEmailInputWrongMsg() {
+        return emailInputWrongMsg;
+    }
+
+    public String getEmailNumberic() {
+        return emailNumberic;
+    }
+
+    public String getEmailnotcom() {
+        return emailnotcom;
+    }
+
+    public String getEmailspecialCharacter() {
+        return emailspecialCharacter;
+    }
+
+    public String getPassWordvalid() {
+        return passWordvalid;
+    }
+
+    public String getMessegerRegisteredSuccessfully() {
+        return messegerRegisteredSuccessfully;
     }
 
 }

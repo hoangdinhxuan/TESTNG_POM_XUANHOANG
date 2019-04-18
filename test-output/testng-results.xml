@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="91884" started-at="2019-04-07T06:19:35Z" finished-at="2019-04-07T06:21:07Z">
+  <suite name="Suite" duration-ms="98003" started-at="2019-04-18T03:29:10Z" finished-at="2019-04-18T03:30:48Z">
     <groups>
     </groups>
-    <test name="Login guru on Chrome" duration-ms="91884" started-at="2019-04-07T06:19:35Z" finished-at="2019-04-07T06:21:07Z">
+    <test name="Login guru on Chrome" duration-ms="98003" started-at="2019-04-18T03:29:10Z" finished-at="2019-04-18T03:30:48Z">
       <class name="com.bankguru.testcase.NewCustomerScript">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeClass" is-config="true" duration-ms="11161" started-at="2019-04-07T13:19:51Z" finished-at="2019-04-07T13:20:02Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeClass" is-config="true" duration-ms="7050" started-at="2019-04-18T10:29:20Z" finished-at="2019-04-18T10:29:27Z">
           <params>
             <param index="0">
               <value>
@@ -28,109 +28,109 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="1289" started-at="2019-04-07T13:20:02Z" finished-at="2019-04-07T13:20:03Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="780" started-at="2019-04-18T10:29:27Z" finished-at="2019-04-18T10:29:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_01" duration-ms="271" started-at="2019-04-07T13:20:03Z" finished-at="2019-04-07T13:20:03Z">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_01" duration-ms="156" started-at="2019-04-18T10:29:28Z" finished-at="2019-04-18T10:29:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="803" started-at="2019-04-07T13:20:03Z" finished-at="2019-04-07T13:20:04Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="812" started-at="2019-04-18T10:29:28Z" finished-at="2019-04-18T10:29:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_03()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_03" duration-ms="308" started-at="2019-04-07T13:20:04Z" finished-at="2019-04-07T13:20:04Z">
+        <test-method status="PASS" signature="TC_03()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_03" duration-ms="133" started-at="2019-04-18T10:29:29Z" finished-at="2019-04-18T10:29:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_03 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="1104" started-at="2019-04-07T13:20:04Z" finished-at="2019-04-07T13:20:06Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1168" started-at="2019-04-18T10:29:29Z" finished-at="2019-04-18T10:29:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_04()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_04" duration-ms="227" started-at="2019-04-07T13:20:06Z" finished-at="2019-04-07T13:20:06Z">
+        <test-method status="PASS" signature="TC_04()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_04" duration-ms="106" started-at="2019-04-18T10:29:30Z" finished-at="2019-04-18T10:29:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_04 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="803" started-at="2019-04-07T13:20:06Z" finished-at="2019-04-07T13:20:07Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1176" started-at="2019-04-18T10:29:30Z" finished-at="2019-04-18T10:29:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_05()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_05" duration-ms="251" started-at="2019-04-07T13:20:07Z" finished-at="2019-04-07T13:20:07Z">
+        <test-method status="PASS" signature="TC_05()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_05" duration-ms="112" started-at="2019-04-18T10:29:32Z" finished-at="2019-04-18T10:29:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_05 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="789" started-at="2019-04-07T13:20:07Z" finished-at="2019-04-07T13:20:08Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1124" started-at="2019-04-18T10:29:32Z" finished-at="2019-04-18T10:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_06()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_06" duration-ms="282" started-at="2019-04-07T13:20:08Z" finished-at="2019-04-07T13:20:08Z">
+        <test-method status="PASS" signature="TC_06()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_06" duration-ms="107" started-at="2019-04-18T10:29:33Z" finished-at="2019-04-18T10:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_06 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="815" started-at="2019-04-07T13:20:08Z" finished-at="2019-04-07T13:20:09Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="2203" started-at="2019-04-18T10:29:33Z" finished-at="2019-04-18T10:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_08()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_08" duration-ms="240" started-at="2019-04-07T13:20:09Z" finished-at="2019-04-07T13:20:09Z">
+        <test-method status="PASS" signature="TC_08()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_08" duration-ms="121" started-at="2019-04-18T10:29:35Z" finished-at="2019-04-18T10:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_08 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="995" started-at="2019-04-07T13:20:09Z" finished-at="2019-04-07T13:20:10Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="3507" started-at="2019-04-18T10:29:35Z" finished-at="2019-04-18T10:29:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_09()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_09" duration-ms="259" started-at="2019-04-07T13:20:10Z" finished-at="2019-04-07T13:20:10Z">
+        <test-method status="PASS" signature="TC_09()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_09" duration-ms="126" started-at="2019-04-18T10:29:39Z" finished-at="2019-04-18T10:29:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_09 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="783" started-at="2019-04-07T13:20:10Z" finished-at="2019-04-07T13:20:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1468" started-at="2019-04-18T10:29:39Z" finished-at="2019-04-18T10:29:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_10()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_10" duration-ms="289" started-at="2019-04-07T13:20:11Z" finished-at="2019-04-07T13:20:11Z">
+        <test-method status="PASS" signature="TC_10()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_10" duration-ms="118" started-at="2019-04-18T10:29:40Z" finished-at="2019-04-18T10:29:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_10 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="799" started-at="2019-04-07T13:20:11Z" finished-at="2019-04-07T13:20:12Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1785" started-at="2019-04-18T10:29:41Z" finished-at="2019-04-18T10:29:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_11()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_11" duration-ms="232" started-at="2019-04-07T13:20:12Z" finished-at="2019-04-07T13:20:12Z">
+        <test-method status="PASS" signature="TC_11()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_11" duration-ms="97" started-at="2019-04-18T10:29:42Z" finished-at="2019-04-18T10:29:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_11 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="766" started-at="2019-04-07T13:20:12Z" finished-at="2019-04-07T13:20:13Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1505" started-at="2019-04-18T10:29:42Z" finished-at="2019-04-18T10:29:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_12()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_12" duration-ms="282" started-at="2019-04-07T13:20:13Z" finished-at="2019-04-07T13:20:13Z">
+        <test-method status="PASS" signature="TC_12()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_12" duration-ms="118" started-at="2019-04-18T10:29:44Z" finished-at="2019-04-18T10:29:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_12 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="712" started-at="2019-04-07T13:20:13Z" finished-at="2019-04-07T13:20:14Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="2935" started-at="2019-04-18T10:29:44Z" finished-at="2019-04-18T10:29:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_29()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_29" duration-ms="236" started-at="2019-04-07T13:20:14Z" finished-at="2019-04-07T13:20:14Z">
+        <test-method status="PASS" signature="TC_29()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_29" duration-ms="115" started-at="2019-04-18T10:29:47Z" finished-at="2019-04-18T10:29:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_29 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="795" started-at="2019-04-07T13:20:14Z" finished-at="2019-04-07T13:20:15Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1463" started-at="2019-04-18T10:29:47Z" finished-at="2019-04-18T10:29:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_30()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="TC_30" duration-ms="3164" started-at="2019-04-07T13:20:15Z" finished-at="2019-04-07T13:20:18Z">
+        <test-method status="PASS" signature="TC_30()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_30" duration-ms="6367" started-at="2019-04-18T10:29:49Z" finished-at="2019-04-18T10:29:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_30 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@8bd1b6a]" name="afterClass" is-config="true" duration-ms="630" started-at="2019-04-07T13:20:18Z" finished-at="2019-04-07T13:20:19Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="afterClass" is-config="true" duration-ms="845" started-at="2019-04-18T10:29:55Z" finished-at="2019-04-18T10:29:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.bankguru.testcase.NewCustomerScript -->
       <class name="com.bankguru.testcase.EditCustomerScript">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeClass" is-config="true" duration-ms="12882" started-at="2019-04-07T13:20:19Z" finished-at="2019-04-07T13:20:32Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeClass" is-config="true" duration-ms="8228" started-at="2019-04-18T10:29:56Z" finished-at="2019-04-18T10:30:04Z">
           <params>
             <param index="0">
               <value>
@@ -151,125 +151,125 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1266" started-at="2019-04-07T13:20:32Z" finished-at="2019-04-07T13:20:33Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="845" started-at="2019-04-18T10:30:04Z" finished-at="2019-04-18T10:30:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_01" duration-ms="238" started-at="2019-04-07T13:20:33Z" finished-at="2019-04-07T13:20:33Z">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_01" duration-ms="118" started-at="2019-04-18T10:30:05Z" finished-at="2019-04-18T10:30:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="810" started-at="2019-04-07T13:20:33Z" finished-at="2019-04-07T13:20:34Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="810" started-at="2019-04-18T10:30:05Z" finished-at="2019-04-18T10:30:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_02" duration-ms="243" started-at="2019-04-07T13:20:34Z" finished-at="2019-04-07T13:20:34Z">
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_02" duration-ms="113" started-at="2019-04-18T10:30:06Z" finished-at="2019-04-18T10:30:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="834" started-at="2019-04-07T13:20:34Z" finished-at="2019-04-07T13:20:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="667" started-at="2019-04-18T10:30:06Z" finished-at="2019-04-18T10:30:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_03()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_03" duration-ms="214" started-at="2019-04-07T13:20:35Z" finished-at="2019-04-07T13:20:35Z">
+        <test-method status="PASS" signature="TC_03()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_03" duration-ms="145" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_03 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1229" started-at="2019-04-07T13:20:35Z" finished-at="2019-04-07T13:20:37Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="637" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_04()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_04" duration-ms="222" started-at="2019-04-07T13:20:37Z" finished-at="2019-04-07T13:20:37Z">
+        <test-method status="PASS" signature="TC_04()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_04" duration-ms="109" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_04 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1088" started-at="2019-04-07T13:20:37Z" finished-at="2019-04-07T13:20:38Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="842" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_05()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_05" duration-ms="1425" started-at="2019-04-07T13:20:38Z" finished-at="2019-04-07T13:20:39Z">
+        <test-method status="PASS" signature="TC_05()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_05" duration-ms="918" started-at="2019-04-18T10:30:08Z" finished-at="2019-04-18T10:30:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_05 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1228" started-at="2019-04-07T13:20:39Z" finished-at="2019-04-07T13:20:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="567" started-at="2019-04-18T10:30:09Z" finished-at="2019-04-18T10:30:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_08()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_08" duration-ms="1580" started-at="2019-04-07T13:20:41Z" finished-at="2019-04-07T13:20:42Z">
+        <test-method status="PASS" signature="TC_08()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_08" duration-ms="2066" started-at="2019-04-18T10:30:10Z" finished-at="2019-04-18T10:30:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_08 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1051" started-at="2019-04-07T13:20:42Z" finished-at="2019-04-07T13:20:43Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1280" started-at="2019-04-18T10:30:12Z" finished-at="2019-04-18T10:30:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_09()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_09" duration-ms="1735" started-at="2019-04-07T13:20:43Z" finished-at="2019-04-07T13:20:45Z">
+        <test-method status="PASS" signature="TC_09()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_09" duration-ms="2329" started-at="2019-04-18T10:30:13Z" finished-at="2019-04-18T10:30:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_09 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="834" started-at="2019-04-07T13:20:45Z" finished-at="2019-04-07T13:20:46Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1637" started-at="2019-04-18T10:30:15Z" finished-at="2019-04-18T10:30:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_10()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_10" duration-ms="2424" started-at="2019-04-07T13:20:46Z" finished-at="2019-04-07T13:20:48Z">
+        <test-method status="PASS" signature="TC_10()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_10" duration-ms="4856" started-at="2019-04-18T10:30:17Z" finished-at="2019-04-18T10:30:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_10 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1088" started-at="2019-04-07T13:20:48Z" finished-at="2019-04-07T13:20:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="3979" started-at="2019-04-18T10:30:22Z" finished-at="2019-04-18T10:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_11()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_11" duration-ms="2338" started-at="2019-04-07T13:20:49Z" finished-at="2019-04-07T13:20:52Z">
+        <test-method status="PASS" signature="TC_11()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_11" duration-ms="3322" started-at="2019-04-18T10:30:26Z" finished-at="2019-04-18T10:30:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_11 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="876" started-at="2019-04-07T13:20:52Z" finished-at="2019-04-07T13:20:52Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="3163" started-at="2019-04-18T10:30:29Z" finished-at="2019-04-18T10:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_12()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_12" duration-ms="1920" started-at="2019-04-07T13:20:52Z" finished-at="2019-04-07T13:20:54Z">
+        <test-method status="PASS" signature="TC_12()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_12" duration-ms="2788" started-at="2019-04-18T10:30:32Z" finished-at="2019-04-18T10:30:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_12 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="1150" started-at="2019-04-07T13:20:54Z" finished-at="2019-04-07T13:20:56Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="786" started-at="2019-04-18T10:30:35Z" finished-at="2019-04-18T10:30:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_14()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_14" duration-ms="1909" started-at="2019-04-07T13:20:56Z" finished-at="2019-04-07T13:20:57Z">
+        <test-method status="PASS" signature="TC_14()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_14" duration-ms="1442" started-at="2019-04-18T10:30:36Z" finished-at="2019-04-18T10:30:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_14 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="780" started-at="2019-04-07T13:20:57Z" finished-at="2019-04-07T13:20:58Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1119" started-at="2019-04-18T10:30:37Z" finished-at="2019-04-18T10:30:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_16()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_16" duration-ms="2302" started-at="2019-04-07T13:20:58Z" finished-at="2019-04-07T13:21:01Z">
+        <test-method status="PASS" signature="TC_16()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_16" duration-ms="1255" started-at="2019-04-18T10:30:39Z" finished-at="2019-04-18T10:30:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_16 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="787" started-at="2019-04-07T13:21:01Z" finished-at="2019-04-07T13:21:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1516" started-at="2019-04-18T10:30:40Z" finished-at="2019-04-18T10:30:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_18()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_18" duration-ms="2172" started-at="2019-04-07T13:21:01Z" finished-at="2019-04-07T13:21:04Z">
+        <test-method status="PASS" signature="TC_18()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_18" duration-ms="2343" started-at="2019-04-18T10:30:41Z" finished-at="2019-04-18T10:30:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_18 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="beforeMethod" is-config="true" duration-ms="864" started-at="2019-04-07T13:21:04Z" finished-at="2019-04-07T13:21:04Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1507" started-at="2019-04-18T10:30:44Z" finished-at="2019-04-18T10:30:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_20()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="TC_20" duration-ms="2282" started-at="2019-04-07T13:21:04Z" finished-at="2019-04-07T13:21:07Z">
+        <test-method status="PASS" signature="TC_20()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_20" duration-ms="2374" started-at="2019-04-18T10:30:45Z" finished-at="2019-04-18T10:30:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_20 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@51565ec2]" name="afterClass" is-config="true" duration-ms="636" started-at="2019-04-07T13:21:07Z" finished-at="2019-04-07T13:21:07Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="afterClass" is-config="true" duration-ms="572" started-at="2019-04-18T10:30:48Z" finished-at="2019-04-18T10:30:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.bankguru.testcase.EditCustomerScript -->
       <class name="com.bankguru.testcase.RegisterScript">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.RegisterScript@18be83e4]" name="beforeClass" is-config="true" duration-ms="10424" started-at="2019-04-07T13:19:35Z" finished-at="2019-04-07T13:19:46Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.RegisterScript@2a2d45ba]" name="beforeClass" is-config="true" duration-ms="6575" started-at="2019-04-18T10:29:10Z" finished-at="2019-04-18T10:29:17Z">
           <params>
             <param index="0">
               <value>
@@ -290,11 +290,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.RegisterScript@18be83e4]" name="TC_01" duration-ms="4089" started-at="2019-04-07T13:19:46Z" finished-at="2019-04-07T13:19:50Z">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.RegisterScript@2a2d45ba]" name="TC_01" duration-ms="2968" started-at="2019-04-18T10:29:17Z" finished-at="2019-04-18T10:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.RegisterScript@18be83e4]" name="afterClass" is-config="true" duration-ms="641" started-at="2019-04-07T13:19:50Z" finished-at="2019-04-07T13:19:51Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.RegisterScript@2a2d45ba]" name="afterClass" is-config="true" duration-ms="603" started-at="2019-04-18T10:29:20Z" finished-at="2019-04-18T10:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
