@@ -5,6 +5,7 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
@@ -316,4 +317,24 @@ public class commonFunction extends BasicPage {
 
 	}
 
+	public static int getRandomIndexWithRange(int min, int max) {
+		int random = 0;
+		random = min + new Random().nextInt(((max - min) + 1));
+		return random;
+	}
+
+	public void selectItemInDropdownSpecial(String locatorDropdown, String locator, String value) {
+		{
+			WebElement dropdown = driver.findElement(By.xpath(locatorDropdown));
+			dropdown.click();
+			List<WebElement> list = driver.findElements(By.xpath(locator));
+			for (WebElement element : list) {
+				if (element.getText().equalsIgnoreCase(value)) {
+					element.click();
+					break;
+				}
+			}
+		}
+
+	}
 }

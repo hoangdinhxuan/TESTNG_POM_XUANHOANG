@@ -12,14 +12,13 @@ import org.testng.annotations.Test;
 import com.bankguru.actions.EditCustomer;
 import com.bankguru.actions.HomePage;
 import com.bankguru.actions.LoginPage;
-
 import com.bankguru.actions.RegisterPage;
 
 import CommonPage.Commontestcase;
 import ObjectPageJson.JsonData;
 
 public class EditCustomerScript<NewCustomer> extends Commontestcase {
-	WebDriver driver;
+    WebDriver driver;
 	LoginPage loginPage;
 	RegisterPage registerPage;
 	HomePage homePage;
@@ -28,81 +27,13 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	JsonData data;
 	String email;
 	static String customerId;
-	String customerNamevalid, numberName, specialCharacterName, nameCannotEmptyMsg, dateOfBirthvalid,
-			cannotBeNumbericMsg, cannotSpecialCharacterMsg, firstCharacterBlankSpaceMsg, addressCannotEmptyMsg,
-			addressvalid, addressspecialCharacter, namemustBeNumbericMsg, mustBeNumbericMsg, cityvalid,
-			cityCannotEmptyMsg, citynumber, cityspecialCharacter, cityNotBeNumbericMsg, statevalid, stateCannotEmptyMsg,
-			statenumber, stateNotBeNumbericMsg, statespecialCharacter, pinvalid, pinnumbernotenough,
-			pinMustHave6DigitsMsg, pinCannotEmptyMsg, pinspecialCharacter, pinCharacter, mobileNumbervalid,
-			mobileNumberCannotEmptyMsg, mobileBlankSpace, mobilespecialCharacter, mobileCharacter, emailCannotEmptyMsg,
-			emailnotcom, emailInputWrongMsg, emailNumberic, emailspecialCharacter,
-
-			passWordvalid, messegerRegisteredSuccessfully, messegercustomerID, customerIDmustBeNumbericMsg,
-			customerIDspecialCharacter, customerIDCharacter, customerIDnumberandCharacter;
 
 	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
 	public void beforeClass(String browser, String version, String url) {
 		driver = openMultiBrowser(browser, version, url);
 		data = getDataJson(".\\Data\\BankGuru.json");
-		// message chung
-		cannotSpecialCharacterMsg = "Special characters are not allowed";
-		firstCharacterBlankSpaceMsg = "First character can not have space";
-		mustBeNumbericMsg = "Characters are not allowed";
-		// Customer ID
-		messegercustomerID = "Customer ID is required";
-		customerIDmustBeNumbericMsg = "Characters are not allowed";
-		customerIDspecialCharacter = "123!@#";
-		customerIDnumberandCharacter = "1234Ac";
-		customerIDCharacter = "xyz";
-		// namecustomer
-		numberName = "1234";
-		specialCharacterName = "name!@#";
-		customerNamevalid = "hoangxuan";
-		nameCannotEmptyMsg = "Customer name must not be blank";
-		cannotBeNumbericMsg = "Numbers are not allowed";
-		namemustBeNumbericMsg = "Numbers are not allowed";
 
-		// Adress
-		addressCannotEmptyMsg = "Address Field must not be blank";
-		addressvalid = "Tân Hiệp Hóc Môn";
-		addressspecialCharacter = "@#^%#^%^";
-		// date of birth
-		dateOfBirthvalid = "12/10/1994";
-		// city
-		cityvalid = "Ho Chi Minh";
-		cityCannotEmptyMsg = "City Field must not be blank";
-		citynumber = "1234";
-		cityspecialCharacter = "city!@#";
-		cityNotBeNumbericMsg = "Numbers are not allowed";
-		// PIN
-		pinMustHave6DigitsMsg = "PIN Code must have 6 Digits";
-		pinvalid = "261094";
-		pinnumbernotenough = "1234";
-		pinCharacter = "1234PIN";
-		pinCannotEmptyMsg = "PIN Code must not be blank";
-		pinspecialCharacter = "@#";
-		// STATE
-		statevalid = "Ho Chi Minh";
-		stateCannotEmptyMsg = "State must not be blank";
-		statenumber = "1234";
-		statespecialCharacter = "State!@#";
-		stateNotBeNumbericMsg = "Numbers are not allowed";
-		// MOBILE
-		mobileNumberCannotEmptyMsg = "Mobile no must not be blank";
-		mobileNumbervalid = "098686868";
-		mobileBlankSpace = "09 89";
-		mobileCharacter = "hhhg";
-		mobilespecialCharacter = "0986!@#";
-		// EMAIL
-		emailCannotEmptyMsg = "Email-ID must not be blank";
-		emailInputWrongMsg = "Email-ID is not valid";
-		emailNumberic = "123456";
-		emailnotcom = "guru99@gmail.";
-		emailspecialCharacter = "email!@#";
-
-		passWordvalid = "12345678";
-		messegerRegisteredSuccessfully = "Customer Registered Successfully!!!";
 		email = "hoangxuan" + randomEmail() + "@gmail.com";
 		// loginPage = new LoginPage(driver);
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
@@ -133,7 +64,7 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 //	An error messag "Characters are not allowed" must be shown
 	@Test
 	public void TC_02() {
-		editCustomer.inputCustomerId(customerIDnumberandCharacter);
+		editCustomer.inputCustomerId(data.EditCustomerPage().getCustomerIDnumberandCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCustomerIDmustBeNumbericMsg()),
 				data.ExpectedMsgPage().getCustomerIDmustBeNumbericMsg());
 	}
@@ -143,7 +74,7 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	// allowed" must be shown
 	@Test
 	public void TC_03() {
-		editCustomer.inputCustomerId(customerIDspecialCharacter);
+		editCustomer.inputCustomerId(data.EditCustomerPage().getCustomerIDspecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
 	}
@@ -153,7 +84,7 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 //	2) Submit xyz Edit Customer successfully
 	@Test
 	public void TC_04() {
-		editCustomer.inputCustomerId(customerIDCharacter);
+		editCustomer.inputCustomerId(data.EditCustomerPage().getCustomerIDCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getMustBeNumbericMsg()),
 				data.ExpectedMsgPage().getMustBeNumbericMsg());
 	}
@@ -206,7 +137,7 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		editCustomer.clearAddress();
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getAddressCannotEmptyMsg()),
 				data.ExpectedMsgPage().getAddressCannotEmptyMsg());
-		editCustomer.inputAddress(addressspecialCharacter);
+		editCustomer.inputAddress(data.EditCustomerPage().getAddressspecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
 
@@ -240,12 +171,12 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		editCustomer.clearCity();
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCityCannotEmptyMsg()),
 				data.ExpectedMsgPage().getCityCannotEmptyMsg());
-		editCustomer.inputNumberCity(citynumber);
+		editCustomer.inputNumberCity(data.EditCustomerPage().getCitynumber());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCityNotBeNumbericMsg()),
 				data.ExpectedMsgPage().getCityNotBeNumbericMsg());
 		// Enter Special Character In CITY Field : City!@#
 		editCustomer.clearCity();
-		editCustomer.inputNumberCity(cityspecialCharacter);
+		editCustomer.inputNumberCity(data.EditCustomerPage().getCityspecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
 
@@ -280,12 +211,12 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		editCustomer.clearState();
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getStateCannotEmptyMsg()),
 				data.ExpectedMsgPage().getStateCannotEmptyMsg());
-		editCustomer.inputState(statenumber);
+		editCustomer.inputState(data.EditCustomerPage().getStatenumber());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getStateNotBeNumbericMsg()),
 				data.ExpectedMsgPage().getStateNotBeNumbericMsg());
 		// Enter Special Character In State Field : City!@#
 		editCustomer.clearState();
-		editCustomer.inputState(statespecialCharacter);
+		editCustomer.inputState(data.EditCustomerPage().getStatespecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
 
@@ -318,12 +249,12 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		editCustomer.clearPin();
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getPinCannotEmptyMsg()),
 				data.ExpectedMsgPage().getPinCannotEmptyMsg());
-		editCustomer.inputNumberPin(pinnumbernotenough);
+		editCustomer.inputNumberPin(data.EditCustomerPage().getPinnumbernotenough());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getPinMustHave6DigitsMsg()),
 				data.ExpectedMsgPage().getPinMustHave6DigitsMsg());
 		// Enter Special Character In State Field : Pin!@#
 		editCustomer.clearPin();
-		editCustomer.inputNumberPin(pinspecialCharacter);
+		editCustomer.inputNumberPin(data.EditCustomerPage().getPinspecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
 
@@ -355,15 +286,15 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		editCustomer.clearMobileNumber();
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getMobileNumberCannotEmptyMsg()),
 				data.ExpectedMsgPage().getMobileNumberCannotEmptyMsg());
-		editCustomer.inputNumberMobileNumber(mobileNumbervalid);
+		editCustomer.inputNumberMobileNumber(data.EditCustomerPage().getMobileNumbervalid());
 		// Enter Special Character In State Field : "hfhhh"
 		editCustomer.clearMobileNumber();
-		editCustomer.inputNumberMobileNumber(mobileCharacter);
+		editCustomer.inputNumberMobileNumber(data.EditCustomerPage().getMobileCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getMustBeNumbericMsg()),
 				data.ExpectedMsgPage().getMustBeNumbericMsg());
 		// Enter Special Character In State Field : "mobile!@#"
 		editCustomer.clearMobileNumber();
-		editCustomer.inputNumberMobileNumber(mobilespecialCharacter);
+		editCustomer.inputNumberMobileNumber(data.EditCustomerPage().getMobilespecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
 	}
@@ -395,16 +326,16 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 		editCustomer.clearEmail();
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getEmailCannotEmptyMsg()),
 				data.ExpectedMsgPage().getEmailCannotEmptyMsg());
-		editCustomer.inputEmail(emailNumberic);
+		editCustomer.inputEmail(data.EditCustomerPage().getEmailNumberic());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getEmailInputWrongMsg()),
 				data.ExpectedMsgPage().getEmailInputWrongMsg());
 		editCustomer.clearEmail();
-		editCustomer.inputEmail(emailnotcom);
+		editCustomer.inputEmail(data.EditCustomerPage().getEmailnotcom());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getEmailInputWrongMsg()),
 				data.ExpectedMsgPage().getEmailInputWrongMsg());
 		// Enter Special Character In State Field : "mobile!@#"
 		editCustomer.clearEmail();
-		editCustomer.inputEmail(emailspecialCharacter);
+		editCustomer.inputEmail(data.EditCustomerPage().getEmailspecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getEmailInputWrongMsg()),
 				data.ExpectedMsgPage().getEmailInputWrongMsg());
 	}
