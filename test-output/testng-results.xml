@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="27" passed="27">
+<testng-results skipped="0" failed="5" total="48" passed="43">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="98003" started-at="2019-04-18T03:29:10Z" finished-at="2019-04-18T03:30:48Z">
+  <suite name="Suite" duration-ms="253627" started-at="2019-04-20T16:41:43Z" finished-at="2019-04-20T16:45:57Z">
     <groups>
     </groups>
-    <test name="Login guru on Chrome" duration-ms="98003" started-at="2019-04-18T03:29:10Z" finished-at="2019-04-18T03:30:48Z">
+    <test name="Login guru on Chrome" duration-ms="253627" started-at="2019-04-20T16:41:43Z" finished-at="2019-04-20T16:45:57Z">
       <class name="com.bankguru.testcase.NewCustomerScript">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeClass" is-config="true" duration-ms="7050" started-at="2019-04-18T10:29:20Z" finished-at="2019-04-18T10:29:27Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeClass" is-config="true" duration-ms="22330" started-at="2019-04-20T23:42:44Z" finished-at="2019-04-20T23:43:06Z">
           <params>
             <param index="0">
               <value>
@@ -28,109 +28,837 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="780" started-at="2019-04-18T10:29:27Z" finished-at="2019-04-18T10:29:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="1186" started-at="2019-04-20T23:43:06Z" finished-at="2019-04-20T23:43:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_01" duration-ms="156" started-at="2019-04-18T10:29:28Z" finished-at="2019-04-18T10:29:28Z">
+        <test-method status="PASS" signature="TC_01_PresskeyTab()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_01_PresskeyTab" duration-ms="639" started-at="2019-04-20T23:43:07Z" finished-at="2019-04-20T23:43:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="812" started-at="2019-04-18T10:29:28Z" finished-at="2019-04-18T10:29:29Z">
+        </test-method> <!-- TC_01_PresskeyTab -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:43:08Z" finished-at="2019-04-20T23:43:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_01_PresskeyTab status=SUCCESS method=NewCustomerScript.TC_01_PresskeyTab()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_03()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_03" duration-ms="133" started-at="2019-04-18T10:29:29Z" finished-at="2019-04-18T10:29:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1168" started-at="2019-04-18T10:29:29Z" finished-at="2019-04-18T10:29:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_04()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_04" duration-ms="106" started-at="2019-04-18T10:29:30Z" finished-at="2019-04-18T10:29:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1176" started-at="2019-04-18T10:29:30Z" finished-at="2019-04-18T10:29:32Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2842" started-at="2019-04-20T23:43:08Z" finished-at="2019-04-20T23:43:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_05()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_05" duration-ms="112" started-at="2019-04-18T10:29:32Z" finished-at="2019-04-18T10:29:32Z">
+        <test-method status="PASS" signature="TC_02_inputNumberCustomerName()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_02_inputNumberCustomerName" duration-ms="190" started-at="2019-04-20T23:43:11Z" finished-at="2019-04-20T23:43:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1124" started-at="2019-04-18T10:29:32Z" finished-at="2019-04-18T10:29:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_06()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_06" duration-ms="107" started-at="2019-04-18T10:29:33Z" finished-at="2019-04-18T10:29:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_06 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="2203" started-at="2019-04-18T10:29:33Z" finished-at="2019-04-18T10:29:35Z">
+        </test-method> <!-- TC_02_inputNumberCustomerName -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3090" started-at="2019-04-20T23:43:11Z" finished-at="2019-04-20T23:43:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_08()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_08" duration-ms="121" started-at="2019-04-18T10:29:35Z" finished-at="2019-04-18T10:29:35Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:11Z" finished-at="2019-04-20T23:43:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_02_inputNumberCustomerName status=SUCCESS method=NewCustomerScript.TC_02_inputNumberCustomerName()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="3507" started-at="2019-04-18T10:29:35Z" finished-at="2019-04-18T10:29:39Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_03_inputNumberSpecialCharacterName()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_03_inputNumberSpecialCharacterName" duration-ms="196" started-at="2019-04-20T23:43:14Z" finished-at="2019-04-20T23:43:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_09()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_09" duration-ms="126" started-at="2019-04-18T10:29:39Z" finished-at="2019-04-18T10:29:39Z">
+        </test-method> <!-- TC_03_inputNumberSpecialCharacterName -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="6" started-at="2019-04-20T23:43:14Z" finished-at="2019-04-20T23:43:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_03_inputNumberSpecialCharacterName status=SUCCESS method=NewCustomerScript.TC_03_inputNumberSpecialCharacterName()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_09 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1468" started-at="2019-04-18T10:29:39Z" finished-at="2019-04-18T10:29:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_10()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_10" duration-ms="118" started-at="2019-04-18T10:29:40Z" finished-at="2019-04-18T10:29:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1785" started-at="2019-04-18T10:29:41Z" finished-at="2019-04-18T10:29:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_11()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_11" duration-ms="97" started-at="2019-04-18T10:29:42Z" finished-at="2019-04-18T10:29:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1505" started-at="2019-04-18T10:29:42Z" finished-at="2019-04-18T10:29:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_12()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_12" duration-ms="118" started-at="2019-04-18T10:29:44Z" finished-at="2019-04-18T10:29:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="2935" started-at="2019-04-18T10:29:44Z" finished-at="2019-04-18T10:29:47Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2687" started-at="2019-04-20T23:43:14Z" finished-at="2019-04-20T23:43:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_29()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_29" duration-ms="115" started-at="2019-04-18T10:29:47Z" finished-at="2019-04-18T10:29:47Z">
+        <test-method status="PASS" signature="TC_04_pressKeyTabCustomerName()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_04_pressKeyTabCustomerName" duration-ms="150" started-at="2019-04-20T23:43:17Z" finished-at="2019-04-20T23:43:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_29 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="beforeMethod" is-config="true" duration-ms="1463" started-at="2019-04-18T10:29:47Z" finished-at="2019-04-18T10:29:49Z">
+        </test-method> <!-- TC_04_pressKeyTabCustomerName -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:17Z" finished-at="2019-04-20T23:43:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_04_pressKeyTabCustomerName status=SUCCESS method=NewCustomerScript.TC_04_pressKeyTabCustomerName()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2977" started-at="2019-04-20T23:43:17Z" finished-at="2019-04-20T23:43:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_30()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="TC_30" duration-ms="6367" started-at="2019-04-18T10:29:49Z" finished-at="2019-04-18T10:29:55Z">
+        <test-method status="PASS" signature="TC_05_pressKeyTabAddress()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_05_pressKeyTabAddress" duration-ms="203" started-at="2019-04-20T23:43:20Z" finished-at="2019-04-20T23:43:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_30 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@6767c1fc]" name="afterClass" is-config="true" duration-ms="845" started-at="2019-04-18T10:29:55Z" finished-at="2019-04-18T10:29:56Z">
+        </test-method> <!-- TC_05_pressKeyTabAddress -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2897" started-at="2019-04-20T23:43:20Z" finished-at="2019-04-20T23:43:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:20Z" finished-at="2019-04-20T23:43:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_05_pressKeyTabAddress status=SUCCESS method=NewCustomerScript.TC_05_pressKeyTabAddress()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_06_pressKeySpaceAddress()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_06_pressKeySpaceAddress" duration-ms="154" started-at="2019-04-20T23:43:23Z" finished-at="2019-04-20T23:43:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_pressKeySpaceAddress -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="3" started-at="2019-04-20T23:43:23Z" finished-at="2019-04-20T23:43:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_06_pressKeySpaceAddress status=SUCCESS method=NewCustomerScript.TC_06_pressKeySpaceAddress()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3147" started-at="2019-04-20T23:43:23Z" finished-at="2019-04-20T23:43:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_08_pressKeyTabCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_08_pressKeyTabCity" duration-ms="173" started-at="2019-04-20T23:43:26Z" finished-at="2019-04-20T23:43:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_pressKeyTabCity -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2721" started-at="2019-04-20T23:43:27Z" finished-at="2019-04-20T23:43:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:27Z" finished-at="2019-04-20T23:43:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_08_pressKeyTabCity status=SUCCESS method=NewCustomerScript.TC_08_pressKeyTabCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_09_inputNumberCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_09_inputNumberCity" duration-ms="154" started-at="2019-04-20T23:43:29Z" finished-at="2019-04-20T23:43:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_09_inputNumberCity -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:30Z" finished-at="2019-04-20T23:43:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_09_inputNumberCity status=SUCCESS method=NewCustomerScript.TC_09_inputNumberCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3914" started-at="2019-04-20T23:43:30Z" finished-at="2019-04-20T23:43:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_10_inputspecialcharacterCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_10_inputspecialcharacterCity" duration-ms="309" started-at="2019-04-20T23:43:33Z" finished-at="2019-04-20T23:43:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_10_inputspecialcharacterCity -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:43:34Z" finished-at="2019-04-20T23:43:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_10_inputspecialcharacterCity status=SUCCESS method=NewCustomerScript.TC_10_inputspecialcharacterCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3122" started-at="2019-04-20T23:43:34Z" finished-at="2019-04-20T23:43:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_11_pressKeySpaceCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_11_pressKeySpaceCity" duration-ms="139" started-at="2019-04-20T23:43:37Z" finished-at="2019-04-20T23:43:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_11_pressKeySpaceCity -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2514" started-at="2019-04-20T23:43:37Z" finished-at="2019-04-20T23:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:37Z" finished-at="2019-04-20T23:43:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_11_pressKeySpaceCity status=SUCCESS method=NewCustomerScript.TC_11_pressKeySpaceCity()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_12_pressKeyTabState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_12_pressKeyTabState" duration-ms="155" started-at="2019-04-20T23:43:40Z" finished-at="2019-04-20T23:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_12_pressKeyTabState -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="3" started-at="2019-04-20T23:43:40Z" finished-at="2019-04-20T23:43:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_12_pressKeyTabState status=SUCCESS method=NewCustomerScript.TC_12_pressKeyTabState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2713" started-at="2019-04-20T23:43:40Z" finished-at="2019-04-20T23:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_13_inputNumberState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_13_inputNumberState" duration-ms="158" started-at="2019-04-20T23:43:42Z" finished-at="2019-04-20T23:43:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_13_inputNumberState -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:43:43Z" finished-at="2019-04-20T23:43:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_13_inputNumberState status=SUCCESS method=NewCustomerScript.TC_13_inputNumberState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3014" started-at="2019-04-20T23:43:43Z" finished-at="2019-04-20T23:43:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_14_inputSpecialCharacterState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_14_inputSpecialCharacterState" duration-ms="215" started-at="2019-04-20T23:43:46Z" finished-at="2019-04-20T23:43:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_14_inputSpecialCharacterState -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2952" started-at="2019-04-20T23:43:46Z" finished-at="2019-04-20T23:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:46Z" finished-at="2019-04-20T23:43:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_14_inputSpecialCharacterState status=SUCCESS method=NewCustomerScript.TC_14_inputSpecialCharacterState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_15_pressKeyState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_15_pressKeyState" duration-ms="140" started-at="2019-04-20T23:43:49Z" finished-at="2019-04-20T23:43:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_15_pressKeyState -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3008" started-at="2019-04-20T23:43:49Z" finished-at="2019-04-20T23:43:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:49Z" finished-at="2019-04-20T23:43:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_15_pressKeyState status=SUCCESS method=NewCustomerScript.TC_15_pressKeyState()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_16_1_inputNumberPin()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_16_1_inputNumberPin" duration-ms="208" started-at="2019-04-20T23:43:52Z" finished-at="2019-04-20T23:43:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_16_1_inputNumberPin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:52Z" finished-at="2019-04-20T23:43:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_16_1_inputNumberPin status=SUCCESS method=NewCustomerScript.TC_16_1_inputNumberPin()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="5762" started-at="2019-04-20T23:43:52Z" finished-at="2019-04-20T23:43:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_16_2_inputPinCharacter()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_16_2_inputPinCharacter" duration-ms="186" started-at="2019-04-20T23:43:58Z" finished-at="2019-04-20T23:43:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_16_2_inputPinCharacter -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:43:58Z" finished-at="2019-04-20T23:43:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_16_2_inputPinCharacter status=SUCCESS method=NewCustomerScript.TC_16_2_inputPinCharacter()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="5724" started-at="2019-04-20T23:43:58Z" finished-at="2019-04-20T23:44:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_17_pressTabPin()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_17_pressTabPin" duration-ms="142" started-at="2019-04-20T23:44:04Z" finished-at="2019-04-20T23:44:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_17_pressTabPin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="11" started-at="2019-04-20T23:44:04Z" finished-at="2019-04-20T23:44:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_17_pressTabPin status=SUCCESS method=NewCustomerScript.TC_17_pressTabPin()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3204" started-at="2019-04-20T23:44:04Z" finished-at="2019-04-20T23:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_19_inputPinspecialCharacter()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_19_inputPinspecialCharacter" duration-ms="171" started-at="2019-04-20T23:44:07Z" finished-at="2019-04-20T23:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_19_inputPinspecialCharacter -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:44:07Z" finished-at="2019-04-20T23:44:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_19_inputPinspecialCharacter status=SUCCESS method=NewCustomerScript.TC_19_inputPinspecialCharacter()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2741" started-at="2019-04-20T23:44:07Z" finished-at="2019-04-20T23:44:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_20_pressTabPin()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_20_pressTabPin" duration-ms="154" started-at="2019-04-20T23:44:10Z" finished-at="2019-04-20T23:44:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_20_pressTabPin -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3836" started-at="2019-04-20T23:44:10Z" finished-at="2019-04-20T23:44:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:44:10Z" finished-at="2019-04-20T23:44:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_20_pressTabPin status=SUCCESS method=NewCustomerScript.TC_20_pressTabPin()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_21_pressTabMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_21_pressTabMobileNumber" duration-ms="161" started-at="2019-04-20T23:44:14Z" finished-at="2019-04-20T23:44:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_21_pressTabMobileNumber -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2783" started-at="2019-04-20T23:44:14Z" finished-at="2019-04-20T23:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:44:14Z" finished-at="2019-04-20T23:44:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_21_pressTabMobileNumber status=SUCCESS method=NewCustomerScript.TC_21_pressTabMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_22_pressSpaceMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_22_pressSpaceMobileNumber" duration-ms="161" started-at="2019-04-20T23:44:17Z" finished-at="2019-04-20T23:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_22_pressSpaceMobileNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:44:17Z" finished-at="2019-04-20T23:44:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_22_pressSpaceMobileNumber status=SUCCESS method=NewCustomerScript.TC_22_pressSpaceMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2911" started-at="2019-04-20T23:44:17Z" finished-at="2019-04-20T23:44:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_24_inputNumberMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_24_inputNumberMobileNumber" duration-ms="170" started-at="2019-04-20T23:44:20Z" finished-at="2019-04-20T23:44:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_24_inputNumberMobileNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="8" started-at="2019-04-20T23:44:20Z" finished-at="2019-04-20T23:44:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_24_inputNumberMobileNumber status=SUCCESS method=NewCustomerScript.TC_24_inputNumberMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2800" started-at="2019-04-20T23:44:20Z" finished-at="2019-04-20T23:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_25_inputspecialCharacterMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_25_inputspecialCharacterMobileNumber" duration-ms="197" started-at="2019-04-20T23:44:23Z" finished-at="2019-04-20T23:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_25_inputspecialCharacterMobileNumber -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3095" started-at="2019-04-20T23:44:23Z" finished-at="2019-04-20T23:44:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:44:23Z" finished-at="2019-04-20T23:44:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_25_inputspecialCharacterMobileNumber status=SUCCESS method=NewCustomerScript.TC_25_inputspecialCharacterMobileNumber()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_26_pressTabEmail()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_26_pressTabEmail" duration-ms="196" started-at="2019-04-20T23:44:26Z" finished-at="2019-04-20T23:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_26_pressTabEmail -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3046" started-at="2019-04-20T23:44:27Z" finished-at="2019-04-20T23:44:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:44:27Z" finished-at="2019-04-20T23:44:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_26_pressTabEmail status=SUCCESS method=NewCustomerScript.TC_26_pressTabEmail()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="TC_27_1_inputEmailnotdoccom()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_27_1_inputEmailnotdoccom" duration-ms="212" started-at="2019-04-20T23:44:30Z" finished-at="2019-04-20T23:44:30Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_1_inputEmailnotdoccom(NewCustomerScript.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),'Email-ID must not be blank')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-P7R3D54', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_27_1_inputEmailnotdoccom -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="32" started-at="2019-04-20T23:44:30Z" finished-at="2019-04-20T23:44:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_27_1_inputEmailnotdoccom status=FAILURE method=NewCustomerScript.TC_27_1_inputEmailnotdoccom()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2907" started-at="2019-04-20T23:44:30Z" finished-at="2019-04-20T23:44:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC_27_2_inputEmailvarchar()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_27_2_inputEmailvarchar" duration-ms="125" started-at="2019-04-20T23:44:33Z" finished-at="2019-04-20T23:44:33Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_2_inputEmailvarchar(NewCustomerScript.java:358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),'Email-ID must not be blank')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-P7R3D54', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_27_2_inputEmailvarchar -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:44:33Z" finished-at="2019-04-20T23:44:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_27_2_inputEmailvarchar status=FAILURE method=NewCustomerScript.TC_27_2_inputEmailvarchar()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3076" started-at="2019-04-20T23:44:33Z" finished-at="2019-04-20T23:44:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC_27_3_inputEmailbeforea()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_27_3_inputEmailbeforea" duration-ms="174" started-at="2019-04-20T23:44:36Z" finished-at="2019-04-20T23:44:36Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_3_inputEmailbeforea(NewCustomerScript.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),'Email-ID must not be blank')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-P7R3D54', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_27_3_inputEmailbeforea -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:44:36Z" finished-at="2019-04-20T23:44:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_27_3_inputEmailbeforea status=FAILURE method=NewCustomerScript.TC_27_3_inputEmailbeforea()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2713" started-at="2019-04-20T23:44:36Z" finished-at="2019-04-20T23:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC_27_4_inputEmailnotcom()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_27_4_inputEmailnotcom" duration-ms="163" started-at="2019-04-20T23:44:39Z" finished-at="2019-04-20T23:44:39Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_4_inputEmailnotcom(NewCustomerScript.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),'Email-ID must not be blank')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-P7R3D54', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_27_4_inputEmailnotcom -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="3" started-at="2019-04-20T23:44:39Z" finished-at="2019-04-20T23:44:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_27_4_inputEmailnotcom status=FAILURE method=NewCustomerScript.TC_27_4_inputEmailnotcom()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2865" started-at="2019-04-20T23:44:39Z" finished-at="2019-04-20T23:44:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TC_27_5_inputEmailBlankSpace()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_27_5_inputEmailBlankSpace" duration-ms="181" started-at="2019-04-20T23:44:42Z" finished-at="2019-04-20T23:44:42Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),'Email-ID must not be blank')] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_5_inputEmailBlankSpace(NewCustomerScript.java:383)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),'Email-ID must not be blank')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-P7R3D54', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_27_5_inputEmailBlankSpace -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:44:42Z" finished-at="2019-04-20T23:44:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_27_5_inputEmailBlankSpace status=FAILURE method=NewCustomerScript.TC_27_5_inputEmailBlankSpace()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="3164" started-at="2019-04-20T23:44:42Z" finished-at="2019-04-20T23:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_29_pressTabEmail()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_29_pressTabEmail" duration-ms="144" started-at="2019-04-20T23:44:45Z" finished-at="2019-04-20T23:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_29_pressTabEmail -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="beforeMethod" is-config="true" duration-ms="2922" started-at="2019-04-20T23:44:45Z" finished-at="2019-04-20T23:44:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:44:45Z" finished-at="2019-04-20T23:44:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_29_pressTabEmail status=SUCCESS method=NewCustomerScript.TC_29_pressTabEmail()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_30_inputnewCustomervalid()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="TC_30_inputnewCustomervalid" duration-ms="5167" started-at="2019-04-20T23:44:48Z" finished-at="2019-04-20T23:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_30_inputnewCustomervalid -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:44:53Z" finished-at="2019-04-20T23:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_30_inputnewCustomervalid status=SUCCESS method=NewCustomerScript.TC_30_inputnewCustomervalid()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.NewCustomerScript@28d25987]" name="afterClass" is-config="true" duration-ms="930" started-at="2019-04-20T23:44:53Z" finished-at="2019-04-20T23:44:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.bankguru.testcase.NewCustomerScript -->
       <class name="com.bankguru.testcase.EditCustomerScript">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeClass" is-config="true" duration-ms="8228" started-at="2019-04-18T10:29:56Z" finished-at="2019-04-18T10:30:04Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeClass" is-config="true" duration-ms="17047" started-at="2019-04-20T23:44:54Z" finished-at="2019-04-20T23:45:11Z">
           <params>
             <param index="0">
               <value>
@@ -151,125 +879,317 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="845" started-at="2019-04-18T10:30:04Z" finished-at="2019-04-18T10:30:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="1490" started-at="2019-04-20T23:45:11Z" finished-at="2019-04-20T23:45:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_01" duration-ms="118" started-at="2019-04-18T10:30:05Z" finished-at="2019-04-18T10:30:05Z">
+        <test-method status="PASS" signature="TC_01_pressKeyTabCustomerId()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_01_pressKeyTabCustomerId" duration-ms="168" started-at="2019-04-20T23:45:13Z" finished-at="2019-04-20T23:45:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="810" started-at="2019-04-18T10:30:05Z" finished-at="2019-04-18T10:30:06Z">
+        </test-method> <!-- TC_01_pressKeyTabCustomerId -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:45:13Z" finished-at="2019-04-20T23:45:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_01_pressKeyTabCustomerId status=SUCCESS method=EditCustomerScript.TC_01_pressKeyTabCustomerId()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_02" duration-ms="113" started-at="2019-04-18T10:30:06Z" finished-at="2019-04-18T10:30:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="667" started-at="2019-04-18T10:30:06Z" finished-at="2019-04-18T10:30:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_03()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_03" duration-ms="145" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="637" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:07Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="889" started-at="2019-04-20T23:45:13Z" finished-at="2019-04-20T23:45:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_04()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_04" duration-ms="109" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:07Z">
+        <test-method status="PASS" signature="TC_02_inputCustomerIDnumberandCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_02_inputCustomerIDnumberandCharacter" duration-ms="174" started-at="2019-04-20T23:45:14Z" finished-at="2019-04-20T23:45:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="842" started-at="2019-04-18T10:30:07Z" finished-at="2019-04-18T10:30:08Z">
+        </test-method> <!-- TC_02_inputCustomerIDnumberandCharacter -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:14Z" finished-at="2019-04-20T23:45:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_02_inputCustomerIDnumberandCharacter status=SUCCESS method=EditCustomerScript.TC_02_inputCustomerIDnumberandCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_05()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_05" duration-ms="918" started-at="2019-04-18T10:30:08Z" finished-at="2019-04-18T10:30:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="567" started-at="2019-04-18T10:30:09Z" finished-at="2019-04-18T10:30:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_08()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_08" duration-ms="2066" started-at="2019-04-18T10:30:10Z" finished-at="2019-04-18T10:30:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1280" started-at="2019-04-18T10:30:12Z" finished-at="2019-04-18T10:30:13Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="828" started-at="2019-04-20T23:45:14Z" finished-at="2019-04-20T23:45:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_09()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_09" duration-ms="2329" started-at="2019-04-18T10:30:13Z" finished-at="2019-04-18T10:30:15Z">
+        <test-method status="PASS" signature="TC_03_inputCustomerIDspecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_03_inputCustomerIDspecialCharacter" duration-ms="271" started-at="2019-04-20T23:45:15Z" finished-at="2019-04-20T23:45:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_09 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1637" started-at="2019-04-18T10:30:15Z" finished-at="2019-04-18T10:30:17Z">
+        </test-method> <!-- TC_03_inputCustomerIDspecialCharacter -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-20T23:45:15Z" finished-at="2019-04-20T23:45:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_03_inputCustomerIDspecialCharacter status=SUCCESS method=EditCustomerScript.TC_03_inputCustomerIDspecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_10()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_10" duration-ms="4856" started-at="2019-04-18T10:30:17Z" finished-at="2019-04-18T10:30:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="3979" started-at="2019-04-18T10:30:22Z" finished-at="2019-04-18T10:30:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_11()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_11" duration-ms="3322" started-at="2019-04-18T10:30:26Z" finished-at="2019-04-18T10:30:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="3163" started-at="2019-04-18T10:30:29Z" finished-at="2019-04-18T10:30:32Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="832" started-at="2019-04-20T23:45:15Z" finished-at="2019-04-20T23:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_12()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_12" duration-ms="2788" started-at="2019-04-18T10:30:32Z" finished-at="2019-04-18T10:30:35Z">
+        <test-method status="PASS" signature="TC_04_inputCustomerIDCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_04_inputCustomerIDCharacter" duration-ms="160" started-at="2019-04-20T23:45:16Z" finished-at="2019-04-20T23:45:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="786" started-at="2019-04-18T10:30:35Z" finished-at="2019-04-18T10:30:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_14()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_14" duration-ms="1442" started-at="2019-04-18T10:30:36Z" finished-at="2019-04-18T10:30:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_14 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1119" started-at="2019-04-18T10:30:37Z" finished-at="2019-04-18T10:30:39Z">
+        </test-method> <!-- TC_04_inputCustomerIDCharacter -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="848" started-at="2019-04-20T23:45:16Z" finished-at="2019-04-20T23:45:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_16()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_16" duration-ms="1255" started-at="2019-04-18T10:30:39Z" finished-at="2019-04-18T10:30:40Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:16Z" finished-at="2019-04-20T23:45:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_04_inputCustomerIDCharacter status=SUCCESS method=EditCustomerScript.TC_04_inputCustomerIDCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_16 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1516" started-at="2019-04-18T10:30:40Z" finished-at="2019-04-18T10:30:41Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_05_inputCustomerIDvalid()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_05_inputCustomerIDvalid" duration-ms="1219" started-at="2019-04-20T23:45:17Z" finished-at="2019-04-20T23:45:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_inputCustomerIDvalid -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="831" started-at="2019-04-20T23:45:18Z" finished-at="2019-04-20T23:45:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_18()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_18" duration-ms="2343" started-at="2019-04-18T10:30:41Z" finished-at="2019-04-18T10:30:44Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:18Z" finished-at="2019-04-20T23:45:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_05_inputCustomerIDvalid status=SUCCESS method=EditCustomerScript.TC_05_inputCustomerIDvalid()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_18 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="beforeMethod" is-config="true" duration-ms="1507" started-at="2019-04-18T10:30:44Z" finished-at="2019-04-18T10:30:45Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_08_clearAddress()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_08_clearAddress" duration-ms="1402" started-at="2019-04-20T23:45:19Z" finished-at="2019-04-20T23:45:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_clearAddress -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="846" started-at="2019-04-20T23:45:21Z" finished-at="2019-04-20T23:45:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC_20()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="TC_20" duration-ms="2374" started-at="2019-04-18T10:30:45Z" finished-at="2019-04-18T10:30:48Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:21Z" finished-at="2019-04-20T23:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_08_clearAddress status=SUCCESS method=EditCustomerScript.TC_08_clearAddress()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_20 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@4678c730]" name="afterClass" is-config="true" duration-ms="572" started-at="2019-04-18T10:30:48Z" finished-at="2019-04-18T10:30:48Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_09_clearAddressandpressTabAddress()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_09_clearAddressandpressTabAddress" duration-ms="1707" started-at="2019-04-20T23:45:21Z" finished-at="2019-04-20T23:45:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_09_clearAddressandpressTabAddress -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="816" started-at="2019-04-20T23:45:23Z" finished-at="2019-04-20T23:45:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:23Z" finished-at="2019-04-20T23:45:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_09_clearAddressandpressTabAddress status=SUCCESS method=EditCustomerScript.TC_09_clearAddressandpressTabAddress()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_10_clearAddressandinputAddressspecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_10_clearAddressandinputAddressspecialCharacter" duration-ms="1487" started-at="2019-04-20T23:45:24Z" finished-at="2019-04-20T23:45:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_10_clearAddressandinputAddressspecialCharacter -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="1436" started-at="2019-04-20T23:45:25Z" finished-at="2019-04-20T23:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:25Z" finished-at="2019-04-20T23:45:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_10_clearAddressandinputAddressspecialCharacter status=SUCCESS method=EditCustomerScript.TC_10_clearAddressandinputAddressspecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_11_clearAddressandpressKeyTabCity()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_11_clearAddressandpressKeyTabCity" duration-ms="2731" started-at="2019-04-20T23:45:27Z" finished-at="2019-04-20T23:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_11_clearAddressandpressKeyTabCity -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:30Z" finished-at="2019-04-20T23:45:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_11_clearAddressandpressKeyTabCity status=SUCCESS method=EditCustomerScript.TC_11_clearAddressandpressKeyTabCity()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="2250" started-at="2019-04-20T23:45:30Z" finished-at="2019-04-20T23:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_12_inputNumberCity()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_12_inputNumberCity" duration-ms="3894" started-at="2019-04-20T23:45:32Z" finished-at="2019-04-20T23:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_12_inputNumberCity -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:36Z" finished-at="2019-04-20T23:45:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_12_inputNumberCity status=SUCCESS method=EditCustomerScript.TC_12_inputNumberCity()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="3003" started-at="2019-04-20T23:45:36Z" finished-at="2019-04-20T23:45:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_14_editStatewithnumberandspecialcharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_14_editStatewithnumberandspecialcharacter" duration-ms="3796" started-at="2019-04-20T23:45:39Z" finished-at="2019-04-20T23:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_14_editStatewithnumberandspecialcharacter -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:42Z" finished-at="2019-04-20T23:45:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_14_editStatewithnumberandspecialcharacter status=SUCCESS method=EditCustomerScript.TC_14_editStatewithnumberandspecialcharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="1115" started-at="2019-04-20T23:45:42Z" finished-at="2019-04-20T23:45:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_16_EditPinnumbernotenoughandSpecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_16_EditPinnumbernotenoughandSpecialCharacter" duration-ms="1691" started-at="2019-04-20T23:45:44Z" finished-at="2019-04-20T23:45:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_16_EditPinnumbernotenoughandSpecialCharacter -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:45Z" finished-at="2019-04-20T23:45:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_16_EditPinnumbernotenoughandSpecialCharacter status=SUCCESS method=EditCustomerScript.TC_16_EditPinnumbernotenoughandSpecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="803" started-at="2019-04-20T23:45:45Z" finished-at="2019-04-20T23:45:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_17_EditCitypressKeyTabandSPACE()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_17_EditCitypressKeyTabandSPACE" duration-ms="1702" started-at="2019-04-20T23:45:46Z" finished-at="2019-04-20T23:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_17_EditCitypressKeyTabandSPACE -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="844" started-at="2019-04-20T23:45:48Z" finished-at="2019-04-20T23:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:48Z" finished-at="2019-04-20T23:45:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_17_EditCitypressKeyTabandSPACE status=SUCCESS method=EditCustomerScript.TC_17_EditCitypressKeyTabandSPACE()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC_18_EditStatepressKeyTabaandcharacterandSPACE()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_18_EditStatepressKeyTabaandcharacterandSPACE" duration-ms="1867" started-at="2019-04-20T23:45:49Z" finished-at="2019-04-20T23:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_18_EditStatepressKeyTabaandcharacterandSPACE -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:51Z" finished-at="2019-04-20T23:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_18_EditStatepressKeyTabaandcharacterandSPACE status=SUCCESS method=EditCustomerScript.TC_18_EditStatepressKeyTabaandcharacterandSPACE()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="846" started-at="2019-04-20T23:45:51Z" finished-at="2019-04-20T23:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_19_EditEmailpressKeyTabaandcharacterSPACE()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_19_EditEmailpressKeyTabaandcharacterSPACE" duration-ms="1923" started-at="2019-04-20T23:45:51Z" finished-at="2019-04-20T23:45:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_19_EditEmailpressKeyTabaandcharacterSPACE -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:53Z" finished-at="2019-04-20T23:45:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_19_EditEmailpressKeyTabaandcharacterSPACE status=SUCCESS method=EditCustomerScript.TC_19_EditEmailpressKeyTabaandcharacterSPACE()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="beforeMethod" is-config="true" duration-ms="829" started-at="2019-04-20T23:45:53Z" finished-at="2019-04-20T23:45:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC_20_EditEmailwrongemailandspecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="TC_20_EditEmailwrongemailandspecialCharacter" duration-ms="1955" started-at="2019-04-20T23:45:54Z" finished-at="2019-04-20T23:45:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_20_EditEmailwrongemailandspecialCharacter -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterClass" is-config="true" duration-ms="783" started-at="2019-04-20T23:45:56Z" finished-at="2019-04-20T23:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-20T23:45:56Z" finished-at="2019-04-20T23:45:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_20_EditEmailwrongemailandspecialCharacter status=SUCCESS method=EditCustomerScript.TC_20_EditEmailwrongemailandspecialCharacter()[pri:0, instance:com.bankguru.testcase.EditCustomerScript@59fa1d9b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.bankguru.testcase.EditCustomerScript -->
       <class name="com.bankguru.testcase.RegisterScript">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.RegisterScript@2a2d45ba]" name="beforeClass" is-config="true" duration-ms="6575" started-at="2019-04-18T10:29:10Z" finished-at="2019-04-18T10:29:17Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.testcase.RegisterScript@cc285f4]" name="beforeClass" is-config="true" duration-ms="39951" started-at="2019-04-20T23:41:43Z" finished-at="2019-04-20T23:42:23Z">
           <params>
             <param index="0">
               <value>
@@ -290,11 +1210,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.RegisterScript@2a2d45ba]" name="TC_01" duration-ms="2968" started-at="2019-04-18T10:29:17Z" finished-at="2019-04-18T10:29:20Z">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.bankguru.testcase.RegisterScript@cc285f4]" name="TC_01" duration-ms="16997" started-at="2019-04-20T23:42:23Z" finished-at="2019-04-20T23:42:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.RegisterScript@2a2d45ba]" name="afterClass" is-config="true" duration-ms="603" started-at="2019-04-18T10:29:20Z" finished-at="2019-04-18T10:29:20Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.bankguru.testcase.RegisterScript@cc285f4]" name="afterMethod" is-config="true" duration-ms="10" started-at="2019-04-20T23:42:40Z" finished-at="2019-04-20T23:42:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_01 status=SUCCESS method=RegisterScript.TC_01()[pri:0, instance:com.bankguru.testcase.RegisterScript@cc285f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.bankguru.testcase.RegisterScript@cc285f4]" name="afterClass" is-config="true" duration-ms="3539" started-at="2019-04-20T23:42:40Z" finished-at="2019-04-20T23:42:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login guru on Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>43/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 18 10:29:10 ICT 2019</td>
+<td>Started on:</td><td>Sat Apr 20 23:41:43 ICT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>98 seconds (98003 ms)</td>
+<tr><td>Total time:</td><td>253 seconds (253627 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,354 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_27_1_inputEmailnotdoccom()'><b>TC_27_1_inputEmailnotdoccom</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_1_inputEmailnotdoccom(NewCustomerScript.java:350)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace486569408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace486569408'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_1_inputEmailnotdoccom(NewCustomerScript.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_27_2_inputEmailvarchar()'><b>TC_27_2_inputEmailvarchar</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_2_inputEmailvarchar(NewCustomerScript.java:358)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2131639942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2131639942'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_2_inputEmailvarchar(NewCustomerScript.java:358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_27_3_inputEmailbeforea()'><b>TC_27_3_inputEmailbeforea</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_3_inputEmailbeforea(NewCustomerScript.java:367)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1588030117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1588030117'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_3_inputEmailbeforea(NewCustomerScript.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_27_4_inputEmailnotcom()'><b>TC_27_4_inputEmailnotcom</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_4_inputEmailnotcom(NewCustomerScript.java:375)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1144202774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1144202774'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_4_inputEmailnotcom(NewCustomerScript.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_27_5_inputEmailBlankSpace()'><b>TC_27_5_inputEmailBlankSpace</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_5_inputEmailBlankSpace(NewCustomerScript.java:383)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace617060120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace617060120'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)] (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at CommonPage.commonFunction.waitVisibleDynamicElement(commonFunction.java:298)
+	at com.bankguru.actions.NewCustormer.getDynamicText(NewCustormer.java:28)
+	at com.bankguru.testcase.NewCustomerScript.TC_27_5_inputEmailBlankSpace(NewCustomerScript.java:383)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[contains(text(),&apos;Email-ID must not be blank&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-P7R3D54&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 23 more
+</pre></div></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,138 +425,218 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.bankguru.testcase.RegisterScript.TC_01()'><b>TC_01</b><br>Test class: com.bankguru.testcase.RegisterScript</td>
 <td></td>
+<td>16</td>
+<td>com.bankguru.testcase.RegisterScript@cc285f4</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_01_PresskeyTab()'><b>TC_01_PresskeyTab</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_01_pressKeyTabCustomerId()'><b>TC_01_pressKeyTabCustomerId</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_02_inputCustomerIDnumberandCharacter()'><b>TC_02_inputCustomerIDnumberandCharacter</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_02_inputNumberCustomerName()'><b>TC_02_inputNumberCustomerName</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_03_inputCustomerIDspecialCharacter()'><b>TC_03_inputCustomerIDspecialCharacter</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_03_inputNumberSpecialCharacterName()'><b>TC_03_inputNumberSpecialCharacterName</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_04_inputCustomerIDCharacter()'><b>TC_04_inputCustomerIDCharacter</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_04_pressKeyTabCustomerName()'><b>TC_04_pressKeyTabCustomerName</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_05_inputCustomerIDvalid()'><b>TC_05_inputCustomerIDvalid</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_05_pressKeyTabAddress()'><b>TC_05_pressKeyTabAddress</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_06_pressKeySpaceAddress()'><b>TC_06_pressKeySpaceAddress</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_08_clearAddress()'><b>TC_08_clearAddress</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_08_pressKeyTabCity()'><b>TC_08_pressKeyTabCity</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_09_clearAddressandpressTabAddress()'><b>TC_09_clearAddressandpressTabAddress</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_09_inputNumberCity()'><b>TC_09_inputNumberCity</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_10_clearAddressandinputAddressspecialCharacter()'><b>TC_10_clearAddressandinputAddressspecialCharacter</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_10_inputspecialcharacterCity()'><b>TC_10_inputspecialcharacterCity</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_11_clearAddressandpressKeyTabCity()'><b>TC_11_clearAddressandpressKeyTabCity</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
 <td>2</td>
-<td>com.bankguru.testcase.RegisterScript@2a2d45ba</td></tr>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
 <tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_01()'><b>TC_01</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_11_pressKeySpaceCity()'><b>TC_11_pressKeySpaceCity</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
 <td></td>
 <td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
 <tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_01()'><b>TC_01</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_02()'><b>TC_02</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_03()'><b>TC_03</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_03()'><b>TC_03</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_04()'><b>TC_04</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_04()'><b>TC_04</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_05()'><b>TC_05</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_05()'><b>TC_05</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_06()'><b>TC_06</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_08()'><b>TC_08</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_08()'><b>TC_08</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>2</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_09()'><b>TC_09</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_09()'><b>TC_09</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>2</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_10()'><b>TC_10</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_10()'><b>TC_10</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>4</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_11()'><b>TC_11</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
-<td></td>
-<td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_11()'><b>TC_11</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_12_inputNumberCity()'><b>TC_12_inputNumberCity</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
 <td></td>
 <td>3</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
 <tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_12()'><b>TC_12</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_12_pressKeyTabState()'><b>TC_12_pressKeyTabState</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
 <td></td>
 <td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
 <tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_12()'><b>TC_12</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>2</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_14()'><b>TC_14</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>1</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_16()'><b>TC_16</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>1</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_18()'><b>TC_18</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>2</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.EditCustomerScript.TC_20()'><b>TC_20</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
-<td></td>
-<td>2</td>
-<td>com.bankguru.testcase.EditCustomerScript@4678c730</td></tr>
-<tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_29()'><b>TC_29</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_13_inputNumberState()'><b>TC_13_inputNumberState</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
 <td></td>
 <td>0</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
 <tr>
-<td title='com.bankguru.testcase.NewCustomerScript.TC_30()'><b>TC_30</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_14_editStatewithnumberandspecialcharacter()'><b>TC_14_editStatewithnumberandspecialcharacter</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
 <td></td>
-<td>6</td>
-<td>com.bankguru.testcase.NewCustomerScript@6767c1fc</td></tr>
+<td>3</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_14_inputSpecialCharacterState()'><b>TC_14_inputSpecialCharacterState</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_15_pressKeyState()'><b>TC_15_pressKeyState</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_16_1_inputNumberPin()'><b>TC_16_1_inputNumberPin</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_16_2_inputPinCharacter()'><b>TC_16_2_inputPinCharacter</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_16_EditPinnumbernotenoughandSpecialCharacter()'><b>TC_16_EditPinnumbernotenoughandSpecialCharacter</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_17_EditCitypressKeyTabandSPACE()'><b>TC_17_EditCitypressKeyTabandSPACE</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_17_pressTabPin()'><b>TC_17_pressTabPin</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_18_EditStatepressKeyTabaandcharacterandSPACE()'><b>TC_18_EditStatepressKeyTabaandcharacterandSPACE</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_19_EditEmailpressKeyTabaandcharacterSPACE()'><b>TC_19_EditEmailpressKeyTabaandcharacterSPACE</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_19_inputPinspecialCharacter()'><b>TC_19_inputPinspecialCharacter</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.EditCustomerScript.TC_20_EditEmailwrongemailandspecialCharacter()'><b>TC_20_EditEmailwrongemailandspecialCharacter</b><br>Test class: com.bankguru.testcase.EditCustomerScript</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.testcase.EditCustomerScript@59fa1d9b</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_20_pressTabPin()'><b>TC_20_pressTabPin</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_21_pressTabMobileNumber()'><b>TC_21_pressTabMobileNumber</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_22_pressSpaceMobileNumber()'><b>TC_22_pressSpaceMobileNumber</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_24_inputNumberMobileNumber()'><b>TC_24_inputNumberMobileNumber</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_25_inputspecialCharacterMobileNumber()'><b>TC_25_inputspecialCharacterMobileNumber</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_26_pressTabEmail()'><b>TC_26_pressTabEmail</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_29_pressTabEmail()'><b>TC_29_pressTabEmail</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
+<tr>
+<td title='com.bankguru.testcase.NewCustomerScript.TC_30_inputnewCustomervalid()'><b>TC_30_inputnewCustomervalid</b><br>Test class: com.bankguru.testcase.NewCustomerScript</td>
+<td></td>
+<td>5</td>
+<td>com.bankguru.testcase.NewCustomerScript@28d25987</td></tr>
 </table><p>
 </body>
 </html>

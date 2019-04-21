@@ -9,8 +9,16 @@
     <parameter name="version" value="2.46"/>
     <parameter name="url" value="http://demo.guru99.com/v4"/>
     <classes>
+      <class name="com.bankguru.testcase.RegisterScript">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.bankguru.testcase.RegisterScript -->
       <class name="com.bankguru.testcase.EditCustomerScript">
         <methods>
+          <include name="afterMethod"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
@@ -18,18 +26,17 @@
       </class> <!-- com.bankguru.testcase.EditCustomerScript -->
       <class name="com.bankguru.testcase.NewCustomerScript">
         <methods>
+          <include name="TC_27_3_inputEmailbeforea"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
-          <include name="TC_08"/>
+          <include name="TC_27_2_inputEmailvarchar"/>
+          <include name="TC_27_1_inputEmailnotdoccom"/>
+          <include name="TC_27_5_inputEmailBlankSpace"/>
+          <include name="afterMethod"/>
           <include name="afterClass"/>
+          <include name="TC_27_4_inputEmailnotcom"/>
         </methods>
       </class> <!-- com.bankguru.testcase.NewCustomerScript -->
-      <class name="com.bankguru.testcase.RegisterScript">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.bankguru.testcase.RegisterScript -->
     </classes>
   </test> <!-- Login guru on Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

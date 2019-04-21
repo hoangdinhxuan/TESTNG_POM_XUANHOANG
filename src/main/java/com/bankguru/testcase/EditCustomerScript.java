@@ -3,7 +3,9 @@ package com.bankguru.testcase;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -33,6 +35,7 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	public void beforeClass(String browser, String version, String url) {
 		driver = openMultiBrowser(browser, version, url);
 		data = getDataJson(".\\Data\\BankGuru.json");
+		inititalReport("EditCustomer.html");
 
 		email = "hoangxuan" + randomEmail() + "@gmail.com";
 		// loginPage = new LoginPage(driver);
@@ -54,7 +57,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	// Customer id Field2) Press TAB and move to next FieldAn error message
 	// "CustomerID is required" must be shown
 
-	public void TC_01() {
+	public void TC_01_pressKeyTabCustomerId() {
+		logTestCase("pressKeyTabCustomerId");
 		editCustomer.pressKeyTabCustomerId(Keys.TAB);
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getMessegercustomerID()),
 				data.ExpectedMsgPage().getMessegercustomerID());
@@ -63,7 +67,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 //	2.Customer id must be numeric1) Enter character value in Customer idField 1234Ac /cAcc123
 //	An error messag "Characters are not allowed" must be shown
 	@Test
-	public void TC_02() {
+	public void TC_02_inputCustomerIDnumberandCharacter() {
+		logTestCase("inputCustomerIDnumberandCharacter");
 		editCustomer.inputCustomerId(data.EditCustomerPage().getCustomerIDnumberandCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCustomerIDmustBeNumbericMsg()),
 				data.ExpectedMsgPage().getCustomerIDmustBeNumbericMsg());
@@ -73,7 +78,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	// Customer id Field 123!@# !@# An error message "Special characters are not
 	// allowed" must be shown
 	@Test
-	public void TC_03() {
+	public void TC_03_inputCustomerIDspecialCharacter() {
+		logTestCase("inputCustomerIDspecialCharacter");
 		editCustomer.inputCustomerId(data.EditCustomerPage().getCustomerIDspecialCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
@@ -83,7 +89,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 //	1) Enter valid Customer id
 //	2) Submit xyz Edit Customer successfully
 	@Test
-	public void TC_04() {
+	public void TC_04_inputCustomerIDCharacter() {
+		logTestCase("inputCustomerIDCharacter");
 		editCustomer.inputCustomerId(data.EditCustomerPage().getCustomerIDCharacter());
 		verifyEqual(editCustomer.getDynamicText(data.EditCustomerPage().getMustBeNumbericMsg()),
 				data.ExpectedMsgPage().getMustBeNumbericMsg());
@@ -94,7 +101,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 //	2) Submit Edit Customer successfully
 
 	@Test
-	public void TC_05() {
+	public void TC_05_inputCustomerIDvalid() {
+		logTestCase("inputCustomerIDvalid");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 	}
@@ -104,7 +112,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 //	An error message "Address Field must not be blank" must be shown
 
 	@Test
-	public void TC_08() {
+	public void TC_08_clearAddress() {
+		logTestCase("clearAddress");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearAddress();
@@ -117,7 +126,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 //	1) Do not enter a value in ADDRESS Field 2) Press clear to  Field
 //	An error message "Address Field must not be blank" must be shown , presskeyTab Address An error message "Email-ID must not be blank"
 	@Test
-	public void TC_09() {
+	public void TC_09_clearAddressandpressTabAddress() {
+		logTestCase("clearAddressandpressTabAddress");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearAddress();
@@ -131,7 +141,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	//
 //	10.	inputaddress @#^%#^%^
 	@Test
-	public void TC_10() {
+	public void TC_10_clearAddressandinputAddressspecialCharacter() {
+		logTestCase("clearAddressandinputAddressspecialCharacter");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearAddress();
@@ -145,7 +156,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 ////	11.	 City cannot be empty 1) Do not enter a value in CITY Field 2) Press TAB and move to next Field Do not enter a value in CITY Field 2) Press TAB and SPace and move to next Field
 
 	@Test
-	public void TC_11() {
+	public void TC_11_clearAddressandpressKeyTabCity() {
+		logTestCase("clearAddressandpressKeyTabCity");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearCity();
@@ -165,7 +177,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 
 //	 12 Enter numeric value in CITY Field 1234 city123
 	@Test
-	public void TC_12() {
+	public void TC_12_inputNumberCity() {
+		logTestCase("inputNumberCity");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearCity();
@@ -185,7 +198,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	// Field 2) Press TAB and move to next Field.An error message "State must not be
 	// blank" must be shown
 
-	public void TC_13() {
+	public void TC_13_editandpressSpaceState() {
+		logTestCase("editandpressSpaceState");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearState();
@@ -205,7 +219,9 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 
 //14 input valua 1234, State!@#
 	@Test
-	public void TC_14() {
+	public void TC_14_editStatewithnumberandspecialcharacter() {
+		logTestCase("editStatewithnumberandspecialcharacter");
+
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearState();
@@ -223,7 +239,9 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	}
 
 	// PIN
-	public void TC_15() {
+	public void TC_15_EditPinwithpressTAbandSpace() {
+		logTestCase("EditPinpressTAbandSpace");
+
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearPin();
@@ -243,7 +261,9 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 
 //16 input valua 1234, Pin!@#
 	@Test
-	public void TC_16() {
+	public void TC_16_EditPinnumbernotenoughandSpecialCharacter() {
+		logTestCase("EditPinnumbernotenoughandSpecialCharacter");
+
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearPin();
@@ -261,7 +281,9 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	}
 
 	// MOBIle
-	public void TC_17() {
+	@Test
+	public void TC_17_EditCitypressKeyTabandSPACE() {
+		logTestCase("EditCitypressKeyTabandSPACE");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearMobileNumber();
@@ -280,7 +302,9 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 
 	// 18 input valua 1234, mobile!@#
 	@Test
-	public void TC_18() {
+	public void TC_18_EditStatepressKeyTabaandcharacterandSPACE() {
+		logTestCase("EditStatepressKeyTaba andcharacter and SPACE");
+
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearMobileNumber();
@@ -300,7 +324,10 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 	}
 
 	// 19 EMAil
-	public void TC_19() {
+	@Test
+	public void TC_19_EditEmailpressKeyTabaandcharacterSPACE() {
+		logTestCase("EditEmailpressKeyTabaandcharacterSPACE");
+
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearEmail();
@@ -320,7 +347,8 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 
 	// 20 input valua 1234, mobile!@#
 	@Test
-	public void TC_20() {
+	public void TC_20_EditEmailwrongemailandspecialCharacter() {
+		logTestCase("EditEmailwrongemailandspecialCharacter");
 		editCustomer.inputCustomerId(NewCustomerScript.customerId);
 		editCustomer.clickSummit();
 		editCustomer.clearEmail();
@@ -340,8 +368,13 @@ public class EditCustomerScript<NewCustomer> extends Commontestcase {
 				data.ExpectedMsgPage().getEmailInputWrongMsg());
 	}
 
+	@AfterMethod
+	public void afterMethod(ITestResult result) {
+		getResult(result);
+	}
 	@AfterClass
 	public void afterClass() {
+		exportReport();
 		closeBrowser();
 	}
 }

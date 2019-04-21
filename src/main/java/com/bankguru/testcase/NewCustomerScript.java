@@ -45,6 +45,7 @@ public class NewCustomerScript extends Commontestcase {
 		inititalReport("NewCustomer.html");
 		driver = openMultiBrowser(browser, version, url);
 		data = getDataJson(".\\Data\\BankGuru.json");
+		inititalReport("Newcustomer.html");
 
 //// message chung
 //		cannotSpecialCharacterMsg = "Special characters are not allowed";
@@ -112,8 +113,8 @@ public class NewCustomerScript extends Commontestcase {
 	}
 
 	@Test
-	public void TC_01() {
-		logTestCase("Loginpage");
+	public void TC_01_PresskeyTab() {
+		logTestCase("PresskeyTab");
 		newCustormer.pressKeyTabCustomerName(Keys.TAB);
 
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getNameCannotEmptyMsg()),
@@ -121,8 +122,9 @@ public class NewCustomerScript extends Commontestcase {
 
 	}
 
-	// @Test
-	public void TC_02() {
+	@Test
+	public void TC_02_inputNumberCustomerName() {
+		logTestCase("inputNumberCustomerName");
 		newCustormer.inputNumberCustomerName(data.NewCustomerPage().getNumberName());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotBeNumbericMsg()),
 				data.ExpectedMsgPage().getCannotBeNumbericMsg());
@@ -130,7 +132,8 @@ public class NewCustomerScript extends Commontestcase {
 	}
 
 	@Test
-	public void TC_03() {
+	public void TC_03_inputNumberSpecialCharacterName() {
+		logTestCase("inputNumberSpecialCharacterName");
 		newCustormer.inputNumberCustomerName(data.NewCustomerPage().getSpecialCharacterName());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
@@ -138,7 +141,8 @@ public class NewCustomerScript extends Commontestcase {
 	}
 
 	@Test
-	public void TC_04() {
+	public void TC_04_pressKeyTabCustomerName() {
+		logTestCase("pressKeyTabCustomerName");
 		newCustormer.pressKeyTabCustomerName(Keys.SPACE);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getFirstCharacterBlankSpaceMsg()),
 				data.ExpectedMsgPage().getFirstCharacterBlankSpaceMsg());
@@ -146,14 +150,16 @@ public class NewCustomerScript extends Commontestcase {
 	}
 
 	@Test
-	public void TC_05() {
+	public void TC_05_pressKeyTabAddress() {
+		logTestCase("pressKeyTabAddress");
 		newCustormer.pressKeyTabAddress(Keys.TAB);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getAddressCannotEmptyMsg()),
 				data.ExpectedMsgPage().getAddressCannotEmptyMsg());
 	}
 
 	@Test
-	public void TC_06() {
+	public void TC_06_pressKeySpaceAddress() {
+		logTestCase("pressKeySpaceAddress");
 		newCustormer.pressKeyTabAddress(Keys.SPACE);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getFirstCharacterBlankSpaceMsg()),
 				data.ExpectedMsgPage().getFirstCharacterBlankSpaceMsg());
@@ -161,7 +167,8 @@ public class NewCustomerScript extends Commontestcase {
 
 //	1) Do not enter a value in CITY Field 2) Press TAB and move to next Field
 	@Test
-	public void TC_08() {
+	public void TC_08_pressKeyTabCity() {
+		logTestCase("pressKeySpaceAddress");
 		newCustormer.pressKeyTabCity(Keys.TAB);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCityCannotEmptyMsg()),
 				data.ExpectedMsgPage().getCityCannotEmptyMsg());
@@ -169,7 +176,8 @@ public class NewCustomerScript extends Commontestcase {
 
 //	9) Enter numeric value in CITY Field 1234 city123
 	@Test
-	public void TC_09() {
+	public void TC_09_inputNumberCity() {
+		logTestCase("inputNumberCity");
 		newCustormer.inputNumberCity(data.NewCustomerPage().getCitynumber());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotBeNumbericMsg()),
 				data.ExpectedMsgPage().getCannotBeNumbericMsg());
@@ -177,7 +185,8 @@ public class NewCustomerScript extends Commontestcase {
 
 //	10) Enter Special Character In CITY Field : City!@#
 	@Test
-	public void TC_10() {
+	public void TC_10_inputspecialcharacterCity() {
+		logTestCase("inputspecialcharacterCity");
 		newCustormer.inputNumberCity(data.NewCustomerPage().getCityspecialCharacter());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
@@ -185,7 +194,8 @@ public class NewCustomerScript extends Commontestcase {
 
 //	11) Enter First character Blank space
 	@Test
-	public void TC_11() {
+	public void TC_11_pressKeySpaceCity() {
+		logTestCase("pressKeySpaceCity");
 		newCustormer.pressKeyTabCity(Keys.SPACE);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getFirstCharacterBlankSpaceMsg()),
 				data.ExpectedMsgPage().getFirstCharacterBlankSpaceMsg());
@@ -194,23 +204,26 @@ public class NewCustomerScript extends Commontestcase {
 //12 Verify State Field State cannot be empt1) Do not enter a value in STATE Field 2) Press TAB and move to next Field.An error message "State must not be blank" must be shown
 
 	@Test
-	public void TC_12() {
+	public void TC_12_pressKeyTabState() {
+		logTestCase("pressKeyTabState");
 		newCustormer.pressKeyState(Keys.TAB);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getStateCannotEmptyMsg()),
 				data.ExpectedMsgPage().getStateCannotEmptyMsg());
 	}
 
 //13	 State cannot be numeric 1) Enter numeric value in STATE Field  1234 State123	An error message "Numbers are not allowed" must be shown
-	// @Test
-	public void TC_13() {
+	@Test
+	public void TC_13_inputNumberState() {
+		logTestCase("inputNumberState");
 		newCustormer.inputNumberState(data.NewCustomerPage().getStatenumber());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotBeNumbericMsg()),
 				data.ExpectedMsgPage().getCannotBeNumbericMsg());
 	}
 
 //	14 State cannot have special character 1) Enter Special Character In STATE Field [State!@# !@#]//	An error message "Special characters are not allowed" must be shown
-	// @Test
-	public void TC_14() {
+	@Test
+	public void TC_14_inputSpecialCharacterState() {
+		logTestCase("inputspecialcharacterState");
 		newCustormer.inputNumberState(data.NewCustomerPage().getStatespecialCharacter());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
@@ -218,16 +231,18 @@ public class NewCustomerScript extends Commontestcase {
 
 //	 15 State cannot have first blank space 1) Enter First character Blank space
 
-	// @Test
-	public void TC_15() {
+	@Test
+	public void TC_15_pressKeyState() {
+		logTestCase("pressKeyState");
 		newCustormer.pressKeyState(Keys.SPACE);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getFirstCharacterBlankSpaceMsg()),
 				data.ExpectedMsgPage().getFirstCharacterBlankSpaceMsg());
 	}
 
 //16.1	 Verify PIN Field PIN must be numeric 1) Enter character value in PIN  Field//	1234 An error message "PIN Code must have 6 Digits " must be shown
-	// @Test
-	public void TC_16_1() {
+	@Test
+	public void TC_16_1_inputNumberPin() {
+		logTestCase("inputNumberPinnotenough");
 		newCustormer.inputNumberPin(data.NewCustomerPage().getPinnumbernotenough());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getPinMustHave6DigitsMsg()),
 				data.ExpectedMsgPage().getPinMustHave6DigitsMsg());
@@ -235,24 +250,27 @@ public class NewCustomerScript extends Commontestcase {
 
 //	16.2  input 1234PIN An error message "Characters are not allowed" must be shown
 
-	// @Test
-	public void TC_16_2() {
+	@Test
+	public void TC_16_2_inputPinCharacter() {
+		logTestCase("inputPinCharacter");
 		newCustormer.inputNumberPin(data.NewCustomerPage().getPinCharacter());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getMustBeNumbericMsg()),
 				data.ExpectedMsgPage().getMustBeNumbericMsg());
 	}
 
 //	17 PIN cannot be empty//	1) Do not enter a value in PIN Field 2) Press TAB and move to next Field//	An error message "PIN code must not be blank" must be shown
-	// @Test
-	public void TC_17() {
+	@Test
+	public void TC_17_pressTabPin() {
+		logTestCase("pressTabPin");
 		newCustormer.pressKeyPin(Keys.TAB);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getPinCannotEmptyMsg()),
 				data.ExpectedMsgPage().getPinCannotEmptyMsg());
 	}
 
 //	19 PIN cannot have special character 1) Enter Special Character In PIN Field !@# 123!@# An error message "Special characters are not allowed" must be shown
-	// @Test
-	public void TC_19() {
+	@Test
+	public void TC_19_inputPinspecialCharacter() {
+		logTestCase("inputPinspecialCharacter");
 		newCustormer.inputNumberPin(data.NewCustomerPage().getPinspecialCharacter());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
@@ -260,8 +278,10 @@ public class NewCustomerScript extends Commontestcase {
 
 	// 20. PIN cannot have first blank space 1) Enter First character Blank space An
 	// error message "First character cannot be space" must be shown
-	// @Test
-	public void TC_20() {
+	@Test
+	public void TC_20_pressTabPin() {
+
+		logTestCase("pressTabPin");
 		newCustormer.pressKeyPin(Keys.SPACE);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getFirstCharacterBlankSpaceMsg()),
 				data.ExpectedMsgPage().getFirstCharacterBlankSpaceMsg());
@@ -270,8 +290,9 @@ public class NewCustomerScript extends Commontestcase {
 //	21 PIN cannot have blank space 1) Enter First character Blank space
 //	An error message "PIN cannot have space" must be shown same 20
 //22	 Verify Telephone Field Telephone cannot be empty 1) Do not enter a value in Telephone Field 2) Press TAB and move to next Field//	 An error message "Mobile no must not be blank" must be shown
-	// @Test
-	public void TC_21() {
+	@Test
+	public void TC_21_pressTabMobileNumber() {
+		logTestCase("pressTabMobileNumber");
 		newCustormer.pressKeyMobileNumber(Keys.TAB);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getMobileNumberCannotEmptyMsg()),
 				data.ExpectedMsgPage().getMobileNumberCannotEmptyMsg());
@@ -279,8 +300,9 @@ public class NewCustomerScript extends Commontestcase {
 
 //23	Telephone cannot have first character as blank space 1) Enter First character Blank space
 //	An error message "First character cannot be space" must be shown
-	// @Test
-	public void TC_22() {
+	@Test
+	public void TC_22_pressSpaceMobileNumber() {
+		logTestCase("pressSpaceMobileNumber");
 		newCustormer.pressKeyMobileNumber(Keys.SPACE);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getFirstCharacterBlankSpaceMsg()),
 				data.ExpectedMsgPage().getFirstCharacterBlankSpaceMsg());
@@ -288,8 +310,9 @@ public class NewCustomerScript extends Commontestcase {
 
 //	24 Telephone cannot have spaces 1) Enter Blank space in Telephone 123 123
 //	An error message "Telephone cannot have be space" must be shown
-	// @Test
-	public void TC_24() {
+	@Test
+	public void TC_24_inputNumberMobileNumber() {
+		logTestCase("inputNumberMobileNumber");
 		newCustormer.inputNumberMobileNumber(data.NewCustomerPage().getMobileBlankSpace());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getMustBeNumbericMsg()),
 				data.ExpectedMsgPage().getMustBeNumbericMsg());
@@ -298,8 +321,9 @@ public class NewCustomerScript extends Commontestcase {
 //25	Telephone cannot have special character 1) Enter Special Character In Telephone Field
 //	886636!@12 !@88662682 88663682!@
 //	An error message "Special characters are not allowed" must be shown
-	// @Test
-	public void TC_25() {
+	@Test
+	public void TC_25_inputspecialCharacterMobileNumber() {
+		logTestCase("inputspecialCharacterMobileNumber");
 		newCustormer.inputNumberMobileNumber(data.NewCustomerPage().getMobilespecialCharacter());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getCannotSpecialCharacterMsg()),
 				data.ExpectedMsgPage().getCannotSpecialCharacterMsg());
@@ -308,8 +332,9 @@ public class NewCustomerScript extends Commontestcase {
 //26	Verify Email Field Email cannot be empty
 //	1) Do not enter a value in Email Field 2) Press TAB and move to next Field
 //	An error message "Email ID must not be blank" must be shown
-	// @Test
-	public void TC_26() {
+	@Test
+	public void TC_26_pressTabEmail() {
+		logTestCase("pressTabEmail");
 		newCustormer.pressKeyEmail(Keys.TAB);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getEmailCannotEmptyMsg()),
 				data.ExpectedMsgPage().getEmailCannotEmptyMsg());
@@ -318,36 +343,42 @@ public class NewCustomerScript extends Commontestcase {
 //	27 Email must be in correct format Enter invalid email in Email field
 //	 guru99@gmail guru99 Guru99@ guru99@gmail. guru99gmail. com
 //	 An error message "Email-ID is not valid"" must be shown
-	// @Test
-	public void TC_27_1() {
+	@Test
+	public void TC_27_1_inputEmailnotdoccom() {
+		logTestCase("inputEmailnotdoccom");
 		newCustormer.inputNumberEmail(data.NewCustomerPage().getEmailnotdoccom());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getEmailCannotEmptyMsg()),
 				data.ExpectedMsgPage().getEmailCannotEmptyMsg());
 	}
 
-	// @Test
-	public void TC_27_2() {
+	//@Test
+	public void TC_27_2_inputEmailvarchar() {
+		logTestCase("inputEmailvarchar");
 		newCustormer.inputNumberEmail(data.NewCustomerPage().getEmailvarchar());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getEmailCannotEmptyMsg()),
 				data.ExpectedMsgPage().getEmailCannotEmptyMsg());
 	}
 
-	// @Test
-	public void TC_27_3() {
+	//@Test
+	public void TC_27_3_inputEmailbeforea() {
+		logTestCase("inputEmailbeforea");
+
 		newCustormer.inputNumberEmail(data.NewCustomerPage().getEmailbeforea());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getEmailCannotEmptyMsg()),
 				data.ExpectedMsgPage().getEmailCannotEmptyMsg());
 	}
 
-	// @Test
-	public void TC_27_4() {
+	//@Test
+	public void TC_27_4_inputEmailnotcom() {
+		logTestCase("inputEmailnotcom");
 		newCustormer.inputNumberEmail(data.NewCustomerPage().getEmailnotcom());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getEmailCannotEmptyMsg()),
 				data.ExpectedMsgPage().getEmailCannotEmptyMsg());
 	}
 
-	// @Test
-	public void TC_27_5() {
+	//@Test
+	public void TC_27_5_inputEmailBlankSpace() {
+		logTestCase("inputEmailBlankSpace");
 		newCustormer.inputNumberEmail(data.NewCustomerPage().getEmailBlankSpace());
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getEmailCannotEmptyMsg()),
 				data.ExpectedMsgPage().getEmailCannotEmptyMsg());
@@ -355,7 +386,8 @@ public class NewCustomerScript extends Commontestcase {
 
 //	29 Email cannot have space 1) Enter Blank space in Email //	An error message "Email-ID is not valid" must be shown
 	@Test
-	public void TC_29() {
+	public void TC_29_pressTabEmail() {
+		logTestCase("pressTabEmail");
 		newCustormer.pressKeyEmail(Keys.SPACE);
 		verifyEqual(newCustormer.getDynamicText(data.NewCustomerPage().getFirstCharacterBlankSpaceMsg()),
 				data.ExpectedMsgPage().getFirstCharacterBlankSpaceMsg());
@@ -363,7 +395,8 @@ public class NewCustomerScript extends Commontestcase {
 
 //	30.Verify Field LabelsCheck all Fields name(Label) are as documented in SRS for all modules Cross check Field names with that in SRS Field names in SRS and system should match
 	@Test
-	public void TC_30() {
+	public void TC_30_inputnewCustomervalid() {
+		logTestCase("inputnewCustomervalid");
 		newCustormer.inputNumberCustomerName(data.NewCustomerPage().getCustomerNamevalid());
 		newCustormer.inputDateOfBirth(data.NewCustomerPage().getDateOfBirthvalid());
 		newCustormer.inputAddress(data.NewCustomerPage().getAddressvalid());
